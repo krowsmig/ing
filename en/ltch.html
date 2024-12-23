@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+ 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>LITCH | KROWSMIG</title>
+		<meta name="description" content="LITCH is an app that combines a music app and an OTT app. This page serves as a case study detailing the planning and design process of LITCH.">
+		<meta name="keywords" content="JANDIK, front-end developer, Music App, OTT App, HTML, CSS, jQuery, Web Designer, App Designer, KROWSMIG">
+		<link rel="icon" href="../images/main/favicon.png">
+		<link rel="stylesheet" type="text/css" href="../css/default.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../css/ltch.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+		
+		<script src="../js/jquery.js"></script>
+		<script src="../js/sub_script.js"></script>
+		<script src="../js/ltch_script.js"></script>
+
+		<style type="text/css">	
+			body, html { font-family: 'Jost', sans-serif !important; }
+		</style>
+
+		<script type="text/javascript">
+		</script>
+
+	</head>
+	<body class="dark">
+		<!-- #wrapper -->
+		<div id="wrapper">
+			<!-- .main_bg -->
+			<div class="main_div">
+
+				<!-- #gnb -->
+				<section id="gnb">
+					<div class="top_div">
+						<div class="rel_div">
+							<h1><a href="../index_en.html" class="logo"><span class="img_logo">KROWSMIG</span></a></h1>
+							<div class="right">
+								<a href="#" class="on">EN</a>	
+								<a href="../kr/ltch.html" class="ko">한글</a>
+							</div>
+							<!-- .nav -->
+							<div class="nav">
+								<div class="burger">
+									<h2>Menu</h2>
+									<a href="">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<nav>
+									<a href="#projects" class="">PROJECTS</a>	
+									<a href="#about" class="">CONTACT</a>
+								</nav>
+							</div>
+							<!-- .nav ends -->
+							<div class="btm_line"><span></span></div>
+						</div>
+					</div>
+				</section>
+				<!-- #gnb ends -->
+
+				<!-- #menu_div -->
+				<div id="menu_div">
+					<div class="menu_div">
+						<ul>
+							<li><a href="../en/jndk.html">JANDIK <span>E-Commerce Site</span></a></li>
+							<li><a href="../en/hdwk.html">HODUWORKS <span>Application</span></a></li>
+							<li><a href="../en/hdhm.html">HODUHOME <span>Application</span></a></li>
+							<li><a href="../en/hddc.html">HODUDOC <span>Application</span></a></li>
+							<li><a href="../en/hd.html">HODU <span>Application</span></a></li>
+							<li><a href="../en/hdck.html">HODUCLICK (Web) <span>Web Application</span></a></li>
+							<li><a href="../en/hdck_tb.html">HODUCLICK (Tab) <span>Tablet Version</span></a></li>
+						</ul>
+					</div>
+					<div class="cont_div">
+						<a href="mailto:krowsmig@gmail.com" title="Click to send me an email">
+							<svg width="100%" height="100%" viewBox="0 0 532 532" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+							    <g transform="matrix(1,0,0,1,-20805.4,1386.64)">
+							        <g transform="matrix(1,0,0,1,1469.09,-569.999)">
+							            <g id="grey" transform="matrix(0.919898,0.919898,-0.919898,0.919898,8533.94,-12545.7)">
+							                <path d="M12583.7,359.263L12391.2,551.841L12391.2,359.263L12583.7,359.263Z" style="fill:rgb(52,52,52);"/>
+							            </g>
+							            <g id="yellow" transform="matrix(0.919898,0.919898,0.919898,-0.919898,7872.97,-11530.5)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(0,79,239);"/>
+							            </g>
+							            <g id="yellow1" serif:id="yellow" transform="matrix(-0.919898,0.919898,-0.919898,-0.919898,31331.1,-11530.5)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(255,188,20);"/>
+							            </g>
+							            <g id="red" transform="matrix(0.919898,0.919898,-0.919898,0.919898,8533.94,-12191.4)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(255,83,0);"/>
+							            </g>
+							        </g>
+							    </g>
+							</svg>
+
+
+						</a>
+					</div>
+				</div>
+
+				<!-- #main -->
+				<section id="main">
+					<div class="main wd_1920">
+						<div class="brdr listen main_bg mgn_btm_100">
+							<p class="img_1 main_img brdr">litch app</p>
+							<div class="img_2 main_img brdr"></div>
+						</div>
+					</div>
+					<div class="quick_div wd_1920 pd_btm_160 two">
+						<h1 class="fnt_30 pd_btm_40">LITCH</h1>
+						<ul class="summary_ul pd_btm_60">
+							<li class="pr_li">
+								<p class="title">Programs</p>
+								<p>
+									<span class="ic fi">Figma</span>
+								</p>
+							</li>
+							<li class="yy_li">
+								<p class="title">Created In</p>
+								<p><span>2024</span></p>
+							</li>
+							<li class="in_li">
+								<p class="title">Role (Involvement)</p>
+								<p>Designer <span>(100%)</span>
+								</p>
+								<p>Project Manager <span>(100%)</span>
+								</p>
+							</li>
+						</ul>
+						<div class="description_div">
+							<p class="first_p fnt_14">
+								LITCH is an app that integrates music with movies and series, available in two versions: a standard user version and a creator version. The professional version, designed for artists and content creators, provides an opportunity to showcase their work, while the general user version allows users to enjoy music and content through LITCH.
+							</p>
+
+							<p class="last_p fnt_14">
+								The app was conceived and designed to address the inconvenience of using multiple music and content apps. Bold, rounded borders were incorporated into the design to add vibrancy and a sense of approachability throughout the interface.
+							</p>
+						</div>
+					</div>
+					<div class="guide_div grey_bg wd_full ">
+						<div class=" wd_1920 pd_tp_160 pd_btm_160">
+							<h2 class="fnt_25">Guidelines</h2>
+							<div class="description_div">
+								<p class="des first_p fnt_14">
+									It will be helpful to review the guidelines briefly before exploring the full case study to gain a better understanding. 
+								</p>
+							</div>
+							<ul class="guide_ul pd_tp_60">
+								<li class="app_li">
+									<p class="brdr_80">
+										<span class="title fnt_16">Brand</span>
+										<span class=" fnt_14">
+											LITCH is a name derived from the "LI" of Listen and the "CH" of Watch, with the "+" symbol placed between the two words. For user convenience, the plus button was reimagined as the letter "T," completing the name as LITCH.
+										</span>
+									</p>
+
+								</li>
+								<li class="clr_li listen_li">
+									<p class="brdr_80 listen">
+										<span class="title fnt_16">Listen</span>
+										<span class="des fnt_30">#FFD100</span>
+									</p>
+								</li>
+								<li class="clr_li watch_li">
+									<p class="brdr_80 watch">
+										<span class="title fnt_16">Watch</span>
+										<span class="des fnt_30">#3A51FF</span>
+									</p>
+								</li>
+								<li class="sub_li">
+									<p class="brdr_80">
+										<span class="title fnt_16">Background Color</span>
+										<span class="des span_1 fnt_16">#161616</span>
+										<span class="des span_2 fnt_16">#2b2b2b</span>
+									</p>
+								</li>
+								<li class="font_li">
+									<p class="brdr_80">
+										<span class="title fnt_16">Font</span>
+										<span class="des fnt_30">SUIT</span>
+									</p>
+								</li>
+								<li class="icon_li">
+									<p class="brdr_80">
+										<span class="title fnt_16">Tab Bar</span>
+										<span class="des fnt_16">image of Tab Bar</span>
+									</p>
+								</li>
+							</ul>
+							
+						</div>
+					</div>
+				</section>
+				<!-- #main ends -->
+
+				<!-- #contents -->
+				<div id="contents" class="">
+					
+
+					<!-- #img_title -->
+					<section id="img_title_1" class="wd_full">
+						<div class="img_title_div">
+							<p class="ic listen">listen Icon</p>
+							<h1 class="fnt_50">Listen</h1>
+							<p class="des fnt_16">
+								Listen works just like other music apps, allowing users to listen to music. <span class="break_line"></span>
+								Artists can upload their own songs and concerts, providing a platform for them to share their work.
+							</p>
+							<p class="img_title_1 listen_img lazy_img lazy_css">
+								<span class="img_1_1"></span>
+								<span class="img_1_2"></span>
+								<span class="img_1_3"></span>
+								<span class="gradi_img"></span>
+							</p>
+
+							
+							<ul class="content_ul">
+								<li class="li_1 lt_img"><p class="img_p listen brdr_80 lazy_img lazy_css">image of the app version</p></li>
+								<li class="li_2 rt_des">
+									<div class="half_des_div">
+										<h2 class="fnt_50">The one and only<span class="brkit"></span> <span class="clr_listen fnt_50">Music</span> app for everyone</h2>
+										<p class="des fnt_16">
+											Drawing inspiration from enjoying music on a sunny commute or park stroll, yellow was chosen as the main color to symbolize the sun, giving the app a vibrant, youthful, and energetic vibe.
+											<br><br>
+											Listen offers a variety of music, from mainstream hits to underground tracks, catering to both users and artists across multiple genres and styles.
+
+										 </p>
+									</div>
+								</li>
+								<li class="li_3 wd_full">
+									<ul class="main_des_ul grey_bg brdr_80">
+										<li class="li_1">
+											<div class="half_des_div">
+												<p class="ic">mic illustration</p>
+												<h3 class="fnt_30">For Artists</h3>
+												<p class="fnt_14">
+													This app lets songwriters and composers showcase their work, connect with a broad audience, and build a deeper community through their music.
+												</p>
+											</div>
+											<span class="line"></span>
+										</li>
+										<li class="li_2">
+											<div class="half_des_div">
+												<p class="ic">earphones illustration</p>
+												<h3 class="fnt_30">For Users</h3>
+												<p class="fnt_14">
+													Users can discover songs from top charts to those uploaded by artists on LITCH, and create playlists to share their personal music tastes with others.
+												</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- #img_title ends -->
+
+					<!-- #content_1 -->
+					<section id="content_1">
+						<div class="content_div wd_1920 cnt_btm">
+							<h1 class="fnt_50">Don't have much time?</h1>
+							<p class="des fnt_16">
+								If you're too busy to go through the entire case study, <span class="break_line"></span>
+								simply hover your mouse over the tabs below to view the desired section.</p>
+							<ul class="menu_ul">
+								<li class="li_1"><a href="#">Main</a></li>
+								<li class="li_2"><a href="#">My Box</a></li>
+								<li class="li_3"><a href="#">Popular Tracks & Artists</a></li>
+								<li class="li_4"><a href="#">New Releases & Playlists </a></li>
+								<li class="li_5"><a href="#">Charts</a></li>
+								<li class="li_6"><a href="#">Artists</a></li>
+								<li class="li_7"><a href="#">Live</a></li>
+								<li class="li_8"><a href="#">Reviews</a></li>
+								<li class="li_8"><a href="#">News</a></li>
+							</ul>
+							<div class="mob_div mob_class_0">
+								<div class="circle_bg_div">
+									<div class="circle_rel">
+										<div class="circle_bg">
+										</div>
+										<div class="circle_bg circle_bg_2"></div>
+									</div>
+								</div>
+								<div class="rel">
+									<div class="mob_ab mob_1 brdr_50">
+										<div class="mob_rel">
+											<p class="mob_p lazy_img lazy_css">앱 버전 화면<span class="mob_span_1"></span><span class="mob_span_2"></span></p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="content_ul">
+							<li class="li_1 lt_img">
+								<div class="img_p grey_bg brdr_80 lazy_img lazy_css">
+									<h2 class="fnt_20">
+										Listen to the last song you played instantly</h2>
+									<p class="fnt_14">
+										Upon launch, a play  button on the tab bar lets users quickly resume the last song, with album art as the background.
+									</p>
+								</div>
+							</li>
+							<li class="li_2 rt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">tab bar image</p>
+							</li>
+							
+						</ul>
+					</section>
+
+					<!-- #content_2 -->
+					<section id="content_2">
+						<h1 class="no_size">My Box</h1>
+						<ul class="content_ul">
+							<li class="li_1 lt_des title_li">
+								<div class="half_des_div">
+									<h2 class="fnt_50">Access features <span class="brkit"></span>
+										via <span class="clr_listen fnt_50">My Box</span><span class="brkit"></span>
+										immediately
+									</h2>
+									<p class="des fnt_16">
+										My Box allows users to add their preferred features for quick access from the main screen. Designed in a swipeable card format, it lets users easily navigate through functions by swiping left or right, reducing the need for searching.
+									</p>
+								</div>
+							</li>
+							<li class="li_2 rt_img title_li">
+								<p class="img_p lazy_img lazy_css">my box image 1</p>
+							</li>
+							<li class="li_3 lt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">my box image 2/p>
+							</li>
+							<li class="li_4 rt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">my music app image</p>
+							</li>
+							
+						</ul>
+					</section>
+
+					<!-- #content_3 -->
+					<section id="content_3">
+						<h1 class="no_size">Audio Search</h1>
+						<ul class="content_ul full">
+							<li class="li_1">
+								<div class="half_des_div">
+									<h2 class="fnt_50">Wanna know the song <span class="brkit"></span>playing in the background? <span class="brkit"></span>Start <span class="clr_listen fnt_50">Audio Search</span></h2>
+									<p class="des fnt_16">
+										Small circles are densely arranged, and the frequency is represented through a gradient color. <span class="break_line"></span>
+										The frequency range moves from left to right until the song's information is found.
+									</p>
+								</div>
+							</li>
+							<li class="li_2 cnt_btm">
+								<p class="img_p lazy_img lazy_css">audio search image 1</p>
+								<p class="img_p play_img">
+									<span class="play_img_1"></span>
+									<span class="play_img_2"></span>
+									<span class="play_img_3"></span>
+									<span class="play_img_3_1"></span>
+									<span class="play_img_4"></span>
+									<span class="play_img_5"></span>
+									<span class="play_img_6"></span>
+									<span class="play_img_7"></span>
+
+									<span class="img_sound_bg img_sound_bg_0"></span>
+									<span class="img_sound_bg img_sound_bg_1"></span>
+									<span class="img_sound_bg img_sound_bg_1_1"></span>
+								</p>
+							</li>
+							<li class="li_3 lt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">audio search image 2</p>
+							</li>
+							<li class="li_4 rt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">audio search image 3</p>
+							</li>
+						</ul>
+					</section>
+
+					<!-- #content_4 -->
+					<section id="content_4">
+						<h1 class="no_size">Profile</h1>
+						<ul class="content_ul">
+							<li class="li_1 lt_img title_li"><p class="img_p lazy_img lazy_css">profile app image</p></li>
+							<li class="li_2 rt_des title_li">
+								<div class="half_des_div">
+									<h2 class="fnt_50">Individual <span class="clr_listen fnt_50">Profile</span> <span class="brkit"></span> for Listen & Watch</h2>
+									<p class="des fnt_16">
+										LITCH combines Listen (music/yellow) and Watch (OTT platform/purple) in one app, with separate profiles for each section. The Listen and Watch tabs below the profile image use the tab's main color for easy distinction.
+										<br><br>
+										Profiles differ for general users and artists, displaying details like followers, following, uploaded content, and total earnings from sales.
+									</p>
+								</div>
+							</li>
+							<li class="li_3 lt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">Listen profile app image</p>
+							</li>
+							<li class="li_4 rt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">Watch profile app image</p>
+							</li>
+						</ul>
+					</section>
+
+					<!-- #img_title_2 -->
+					<section id="img_title_2" class="wd_full grey_bg_2">
+						<div class="img_title_div">
+							<p class="ic watch">watch icon</p>
+							<h1 class="fnt_50">Watch</h1>
+							<p class="des fnt_16">
+								As an OTT platform, LITCH allows users to search for and watch their desired movies and series. <span class="break_line"></span>Additionally, users can view content uploaded by creators through the app.
+							</p>
+							<p class="img_title_1 img_title_2 watch_img">
+								<span class="img_1_1"></span>
+								<span class="img_1_2"></span>
+								<span class="img_1_3"></span>
+								<span class="gradi_img"></span>
+							</p>
+
+							
+							<ul class="content_ul">
+								<li class="li_1 lt_des ">
+									<div class="half_des_div">
+										<h2 class="fnt_50">
+											Watch the content <span class="brkit"></span>
+											you want through <span class="brkit"></span>
+											the <span class="clr_watch fnt_50">Watch</span> section
+										</h2>
+										<p class="des fnt_16">
+											The main color, purple, symbolizes the night sky, inspired by the image of unwinding with a movie after a long day. It represents the hope for a peaceful end to the day.
+											<br><br> 
+											On the main area, featured content is displayed, and the play button on the tab bar now shows the most recently viewed content, with its image as the background.
+										</p>
+									</div>
+								</li>
+								<li class="li_2 rt_img ">
+									<p class="img_p watch brdr_80 lazy_img lazy_css">Watch 메인 화면 이미지</p>
+								</li>
+								<li class="li_3 wd_full">
+									<ul class="main_des_ul grey_bg brdr_80">
+										<li class="li_1">
+											<div class="half_des_div">
+												<p class="ic">recording icon</p>
+												<h3 class="fnt_30">For Creators</h3>
+												<p class="fnt_14">
+													Creators who make movies and series as a hobby or professionally can upload their works, introduce themselves as directors, and sell their creations.
+												</p>
+											</div>
+											<span class="line"></span>
+										</li>
+										<li class="li_2">
+											<div class="half_des_div">
+												<p class="ic">Play Icon</p>
+												<h3 class="fnt_30">For Users</h3>
+												<p class="fnt_14">
+													Similar to other OTT platforms, you can use LITCH to watch exclusive content uploaded by creators, available for free or for purchase.
+												</p>
+											</div>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- #img_title_2 ends -->
+
+					<!-- #content_5 -->
+					<section id="content_5">
+						<h1 class="no_size">My Box for watch</h1>
+						<ul class="content_ul full">
+							<li class="li_1">
+								<div class="half_des_div">
+									<h2 class="fnt_50">View your selected <span class="brkit"></span> 
+										content in <span class="clr_watch fnt_50">My Box</span></h2>
+									<p class="des fnt_16">
+										You can create your own content box by adding or removing features such as currently watching, saved, or liked content. My Box works in the same way as the Listen feature.
+									</p>
+								</div>
+							</li>
+							<li class="li_2 cnt_btm">
+								<p class="img_p lazy_img lazy_css">my box image 1</p>
+							</li>
+							<li class="li_3 lt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">my box image 2</p>
+							</li>
+							<li class="li_4 rt_img">
+								<p class="img_p grey_bg brdr_80 lazy_img lazy_css">my box image 3</p>
+							</li>
+						</ul>
+					</section>
+
+					<!-- #content_6 -->
+					<section id="content_6">
+						<h1 class="no_size">Content Detail</h1>
+						<ul class="content_ul">
+							<li class="li_1 lt_des title_li">
+								<div class="half_des_div">
+									<h2 class="fnt_50">
+										The <span class="clr_watch fnt_50">Content Detail</span> <span class="brkit"></span> 
+										for movies and series.
+									</h2>
+									<p class="des fnt_16">
+										After researching various OTT platforms, I designed a familiar, user-friendly interface with a clear structure: Content Type > Watch Button > Essential Info > Movie Details. Tabs for Details, Reviews, Recommended Content, and Episodes (for series) are included.
+										<br><br>
+										The review section is placed next to the content name for easy access, allowing users to view it without extra scrolling.
+									</p>
+								</div>
+							</li>
+							<li class="li_2 rt_img title_li">
+								<p class="img_p lazy_img lazy_css">content detail app image</p>
+							</li>
+							<li class="li_3 wd_full">
+								<ul class="main_des_ul grey_bg brdr_80">
+									<li class="li_1">
+										<div class="half_des_div">
+											<h3 class="fnt_20">Details</h3>
+											<p class="des fnt_14">
+												Unlike other OTT platforms, the selected content includes detailed information such as all related trailers, stills, and other media.
+											</p>
+											<p class="img_p lazy_img lazy_css">detail app image</p>
+										</div>
+									</li>
+									<li class="li_2">
+										<div class="half_des_div">
+											<h3 class="fnt_20">Reviews</h3>
+											<p class="des fnt_14">
+												Instead of stars, numeric ratings are used for a more intuitive and straightforward review system.
+											</p>
+											<p class="img_p lazy_img lazy_css">review app image</p>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<div class="thank_div">
+						<p class="fnt_30">Thank You</p>
+						<p class="fnt_20">You can explore other projects through the top project tab.</p>
+						<div class="line"></div>
+					</div>
+
+				</div>
+				<!-- #contents ends -->
+
+				<!-- .top_btn -->
+				<div class="top_div">
+					<a href="#wrapper" class="top_btn top_btn_f">Back to the top</a>
+				</div>
+				<!-- .top_btn ends -->
+
+
+				<!-- #footer -->
+				<section id="footer" class="wd_1920 pd_btm_160 pd_tp_60">
+					<p class="eng_ft">© 2024 KROWSMIG</p>
+				</section>
+				<!-- #footer ends -->
+			</div>
+
+			<!-- .main_bg ends -->
+		</div>
+		<!-- #wrapper ends-->
+
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/lenis.min.js"></script>
+		<script src="js/common.js"></script>
+		
+	</body>
+</html>

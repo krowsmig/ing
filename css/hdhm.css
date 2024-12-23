@@ -1,0 +1,405 @@
+.fnt_14, .fnt_16 {
+    color: #7e8084;
+}
+.content_dd span.places_1,.content_dd span.second_1,.content_dd span.submenu_2 {
+    background-position: 20% 70px
+}
+
+#main .guide_ul li.sub_li p,#main .main .main_bg,.grey_bg {
+    background: #f3f3f7
+}
+
+#main .guide_ul li.main_li p {
+    background: #6e5bfb
+}
+
+#main .main_text .title,#main .main_text ul li,.third_orbit {
+    color: #6e5bfb
+}
+
+#main .guide_ul li.logo_li p {
+    background-image: url("../images/hdhm/logo_layout.webp")
+}
+
+#main .main .main_img {
+    background-image: url("../images/hdhm/hdhm_main.webp")
+}
+
+#main .main .main_img.img_2 {
+    background-image: url("../images/hdhm/hdhm_main_1.webp")
+}
+
+#main .guide_ul li.app_li span {
+    background-image: url("../images/hdhm/app_icon.webp")
+}
+
+/*#contents .target_ul .gender_ul .gender_img {
+    background-image: url("../images/hdhm/gender_img.webp")
+}
+
+#contents .target_ul .gender_ul .gender_img.age_img {
+    background-image: url("../images/hdhm/age_img.webp")
+}*/
+
+#contents .flow_img {
+    background-image: url("../images/hdhm/hdhm_flow.webp")
+}
+
+.icon_p.ic_places {
+    background-image: url("../images/hdhm/ic_places.webp")
+}
+
+.icon_p.ic_visitor {
+    background-image: url("../images/hdhm/ic_visitor.webp")
+}
+
+.icon_p.ic_second {
+    background-image: url("../images/hdhm/ic_second.webp")
+}
+
+.img_title_1 {
+    background-image: url("../images/hdhm/img_title_1.webp");
+    height: 800px;
+    background-position: center bottom
+}
+
+.img_title_2 {
+    background-image: url("../images/hdhm/img_title_2.webp");
+    height: 800px
+}
+
+.img_title_3 {
+    background-image: url("../images/hdhm/img_title_3.webp");
+    height: 800px
+}
+
+.content_dd span {
+    background-image: url("../images/hdhm/hbt_chat.webp")
+}
+
+.content_dd span.places_1,.content_dd span.two_imgs.places_1:after {
+    background-image: url("../images/hdhm/places_1.webp")
+}
+
+.content_dd span.places_2 {
+    background-image: url("../images/hdhm/places_2.webp")
+}
+
+.content_dd span.visitor_1 {
+    background-image: url("../images/hdhm/visitor_1.webp")
+}
+
+.content_dd span.visitor_2 {
+    background-image: url("../images/hdhm/visitor_2.webp")
+}
+
+.content_dd span.visitor_3 {
+    background-image: url("../images/hdhm/visitor_3.webp")
+}
+
+.content_dd span.second_1,.content_dd span.two_imgs.second_1:after {
+    background-image: url("../images/hdhm/second_1.webp")
+}
+
+.content_dd span.second_2 {
+    background-image: url("../images/hdhm/second_2.webp")
+}
+
+.content_dd span.dashboard_1 {
+    background-image: url("../images/hdhm/dashboard_1.webp")
+}
+
+.content_dd span.dashboard_2 {
+    background-image: url("../images/hdhm/dashboard_2.webp")
+}
+
+.content_dd span.myinfo_1 {
+    background-image: url("../images/hdhm/myinfo_1.webp")
+}
+
+.content_dd span.myinfo_2 {
+    background-image: url("../images/hdhm/myinfo_2.webp")
+}
+
+.content_dd span.submenu_1 {
+    background-image: url("../images/hdhm/submenu_1.webp")
+}
+
+.content_dd span.submenu_2,.content_dd span.two_imgs.submenu_2:after {
+    background-image: url("../images/hdhm/submenu_2.webp")
+}
+
+#other_pages .img_title_other_pages {
+    background-image: url("../images/hdhm/other_pages.webp")
+}
+
+#content_rest .wd_full span {
+    background-color: #242041
+}
+
+.content_dd p span.hbt_1 {
+    background-image: url("../images/hdhm/hbt_1.webp")
+}
+
+.content_dd p span.hbt_2 {
+    background-image: url("../images/hdhm/hbt_2.webp")
+}
+
+.places_1,.second_1,.submenu_2 {
+    background-size: 310px
+}
+
+.dashboard_1,.dashboard_2,.myinfo_1,.myinfo_2,.places_2,.second_2,.submenu_1,.visitor_1,.visitor_2,.visitor_3 {
+    background-size: 490px
+}
+
+#main .main_text .title {
+    display: block
+}
+
+#wrapper #content_rest .gradi_bg_1,#wrapper #content_rest .gradi_bg_2 {
+    background-image: url("../images/hdhm/gradi_bg_1.webp")
+}
+
+#wrapper #content_rest .gradi_bg_1 {
+    background-image: url("../images/hdhm/gradi_bg_2.webp")
+}
+
+.first_orbit,.second_orbit {
+    border-color: #6e5bfb
+}
+
+.cont_div a,.cont_div a:before {
+    background-color: #6e5bfb
+}
+
+.chart_ani .hd_chart.two_panels .pie1,.chart_ani .hd_chart.two_panels circle {
+    -webkit-animation: 3s pie1_two;
+    animation: 4s pie1_two
+}
+
+.chart_ani .hd_chart.two_panels .pie2 {
+    -webkit-animation-name: pie2_two;
+    animation-name: pie2_two
+}
+
+@-webkit-keyframes pie1_two {
+    100%,50% {
+        stroke-dasharray: 56,44,0,0
+    }
+}
+
+@keyframes pie1_two {
+    100%,50% {
+        stroke-dasharray: 56,44,0,0
+    }
+}
+
+@-webkit-keyframes pie2_two {
+    100%,50% {
+        stroke-dasharray: 0,56,44,0
+    }
+}
+
+@keyframes pie2_two {
+    100%,50% {
+        stroke-dasharray: 0,56,44,0
+    }
+}
+
+.target_ul.after .gender_li .pie1 {
+    stroke-dasharray: 56,44,0,0
+}
+
+.target_ul.after .gender_li .pie2 {
+    stroke-dasharray: 0,56,44,0
+}
+
+.chart_ani .hd_chart.five_panels circle {
+    -webkit-animation: 3s pie1_five;
+    animation: 4s pie1_five
+}
+
+.chart_ani .hd_chart.five_panels .pie2 {
+    -webkit-animation-name: pie2_five;
+    animation-name: pie2_five
+}
+
+.chart_ani .hd_chart.five_panels .pie3 {
+    -webkit-animation-name: pie3_five;
+    animation-name: pie3_five
+}
+
+.chart_ani .hd_chart.five_panels .pie4 {
+    -webkit-animation-name: pie4_five;
+    animation-name: pie4_five
+}
+
+.chart_ani .hd_chart.five_panels .pie5 {
+    -webkit-animation-name: pie5_five;
+    animation-name: pie5_five
+}
+
+@-webkit-keyframes pie1_five {
+    100%,50% {
+        stroke-dasharray: 39,61,0,0
+    }
+}
+
+@keyframes pie1_five {
+    100%,50% {
+        stroke-dasharray: 39,61,0,0
+    }
+}
+
+@-webkit-keyframes pie2_five {
+    100%,50% {
+        stroke-dasharray: 64,36,0,0
+    }
+}
+
+@keyframes pie2_five {
+    100%,50% {
+        stroke-dasharray: 64,36,0,0
+    }
+}
+
+@-webkit-keyframes pie3_five {
+    100%,50% {
+        stroke-dasharray: 83,17,0,0
+    }
+}
+
+@keyframes pie3_five {
+    100%,50% {
+        stroke-dasharray: 83,17,0,0
+    }
+}
+
+@-webkit-keyframes pie4_five {
+    100%,50% {
+        stroke-dasharray: 93,7,0,0
+    }
+}
+
+@keyframes pie4_five {
+    100%,50% {
+        stroke-dasharray: 93,7,0,0
+    }
+}
+
+@-webkit-keyframes pie5_five {
+    100%,50% {
+        stroke-dasharray: 100,0,0,0
+    }
+}
+
+@keyframes pie5_five {
+    100%,50% {
+        stroke-dasharray: 100,0,0,0
+    }
+}
+
+.target_ul.after .age_li .pie1 {
+    stroke-dasharray: 39,61,0,0
+}
+
+.target_ul.after .age_li .pie2 {
+    stroke-dasharray: 64,36,0,0
+}
+
+.target_ul.after .age_li .pie3 {
+    stroke-dasharray: 83,17,0,0
+}
+
+.target_ul.after .age_li .pie4 {
+    stroke-dasharray: 93,7,0,0
+}
+
+.target_ul.after .age_li .pie5 {
+    stroke-dasharray: 100,0,0,0
+}
+
+@media screen and (max-width: 2020px) {
+    .img_title_1 {
+        height:545px;
+        background-size: 1020px !important;
+        background-position: bottom center
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #content_2 .wd_33per.rt {
+        width:50%
+    }
+
+    #content_2 .wd_33per.mid {
+        width: 50%;
+        padding-right: 0;
+        padding-left: 10px
+    }
+
+    #content_2 .wd_33per.lt {
+        width: 50%;
+        padding-left: 0;
+        padding-right: 10px;
+        margin-top: 20px
+    }
+
+    #img_title_2 .wd_1920 {
+        padding-left: 0;
+        padding-right: 0
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #img_title_2 .img_title_div {
+        padding-left:0;
+        padding-right: 0
+    }
+
+    .img_title_1.img_title_2 {
+        height: 445px
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #content_2 .wd_33per.lt,#content_2 .wd_33per.mid,#content_2 .wd_33per.rt {
+        width:100%;
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    #wrapper #content_2 .content_dd p.lt {
+        margin-top: 20px
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .img_title_1 {
+        background-position:bottom center;
+        height: 462px;
+        background-size: 880px !important
+    }
+
+    #img_title_1 .img_title_1,#img_title_3 .img_title_1 {
+        background-position: center bottom
+    }
+
+    .img_title_1.img_title_2 {
+        height: 358px;
+        background-position: -350px bottom
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .img_title_1 {
+        height:383px;
+        background-size: 700px !important
+    }
+
+    .img_title_1.img_title_2 {
+        height: 358px;
+        background-position: -290px bottom
+    }
+}

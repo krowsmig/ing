@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="ko">
+ 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>호두클릭 | KROWSMIG</title>
+		<meta name="description" content="회의실 관리와 예약이 가능한 호두클릭 웹 버전의 케이스스터디 페이지입니다. KROWSMIG은 퍼블리싱이 가능한 웹/앱디자이너의 포트폴리오 사이트입니다.">
+		<meta name="keywords" content="호두클릭, 회의실 관리, 회의실 예약, 웹디자이너, 앱디자이너, 퍼블리셔, HTML, CSS, jQuery, Web Designer, App Designer, KROWSMIG">
+		<link rel="icon" href="../images/main/favicon.png">
+		<link rel="stylesheet" type="text/css" href="../css/default.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../css/hdck.css">
+		
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+		
+		<script src="../js/jquery.js"></script>
+		<script src="../js/sub_script.js"></script>
+		<script src="../js/hdck_script.js"></script>
+
+		<style type="text/css">
+		</style>
+
+		<script type="text/javascript">
+		</script>
+		
+	</head>
+	<body>
+		<!-- #wrapper -->
+		<div id="wrapper">
+			<!-- .main_bg -->
+			<div class="main_div">
+
+				<!-- #gnb -->
+				<section id="gnb">
+					<div class="top_div">
+						<div class="rel_div">
+							<h1><a href="../index.html" class="logo"><span class="img_logo en">KROWSMIG</span></a></h1>
+							<div class="right">
+								<a href="../en/hdck.html" class="">EN</a>	
+								<a href="#" class="on">한글</a>
+							</div>
+							<!-- .nav -->
+							<div class="nav">
+								<div class="burger">
+									<h2>메뉴</h2>
+									<a href="">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<nav>
+									<a href="#projects" class="">프로젝트</a>	
+									<a href="#about" class="">연락처</a>
+								</nav>
+							</div>
+							<!-- .nav ends -->
+							<div class="btm_line"><span></span></div>
+						</div>
+					</div>
+				</section>
+				<!-- #gnb ends -->
+
+
+				<!-- #menu_div -->
+				<div id="menu_div">
+					<div class="menu_div">
+						<ul>
+							<li><a href="../kr/ltch.html">LITCH <span>뮤직 & OTT</span></a></li>
+							<li><a href="../kr/jndk.html">JANDIK <span>온라인 쇼핑몰</span></a></li>
+							<li><a href="../kr/hdwk.html">호두웍스 <span>전자결재</span></a></li>
+							<li><a href="../kr/hdhm.html">호두홈 <span>핫플 & 중고거래</span></a></li>
+							<li><a href="../kr/hddc.html">호두닥 <span>병원 예약</span></a></li>
+							<li><a href="../kr/hd.html">호두 <span>일정관리</span></a></li>
+							<li><a href="../kr/hdck_tb.html">호두클릭 (탭 버전) <span>회의실 예약</span></a></li>
+						</ul>
+					</div>
+					<div class="cont_div">
+						<a href="mailto:krowsmig@gmail.com" title="클릭해서 이메일을 보내세요">
+							<svg width="100%" height="100%" viewBox="0 0 532 532" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+							    <g transform="matrix(1,0,0,1,-20805.4,1386.64)">
+							        <g transform="matrix(1,0,0,1,1469.09,-569.999)">
+							            <g id="grey" transform="matrix(0.919898,0.919898,-0.919898,0.919898,8533.94,-12545.7)">
+							                <path d="M12583.7,359.263L12391.2,551.841L12391.2,359.263L12583.7,359.263Z" style="fill:rgb(52,52,52);"/>
+							            </g>
+							            <g id="yellow" transform="matrix(0.919898,0.919898,0.919898,-0.919898,7872.97,-11530.5)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(0,79,239);"/>
+							            </g>
+							            <g id="yellow1" serif:id="yellow" transform="matrix(-0.919898,0.919898,-0.919898,-0.919898,31331.1,-11530.5)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(255,188,20);"/>
+							            </g>
+							            <g id="red" transform="matrix(0.919898,0.919898,-0.919898,0.919898,8533.94,-12191.4)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(255,83,0);"/>
+							            </g>
+							        </g>
+							    </g>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<!-- #main -->
+				<section id="main">
+					<div class="main wd_1920">
+						<div class="brdr main_bg mgn_btm_100">
+							<p class="img_1 main_img brdr">hoduclick web</p>
+							<div class="img_2 main_img brdr"></div>
+						</div>
+					</div>
+					<div class="quick_div wd_1920 pd_btm_160">
+						<h1 class="fnt_30 pd_btm_40">호두클릭 <span>(웹 버전)</span></h1>
+						<ul class="summary_ul pd_btm_60">
+							<li class="pr_li">
+								<p class="title">프로그램</p>
+								<p>
+									<span class="ic ps">PSD</span>
+									<span class="ic ai">Ai</span>
+								</p>
+							</li>
+							<li class="la_li">
+								<p class="title">개발</p>
+								<p>
+									<span>HTML</span>
+									<span>CSS</span>
+									<span>JS</span>
+								</p>
+							</li>
+							<li class="yy_li">
+								<p class="title">제작 연도</p>
+								<p><span>2018</span></p>
+							</li>
+							<li class="in_li">
+								<p class="title">역할 (기여도)</p>
+								<p>디자이너 <span>(100%)</span>
+								</p>
+								<p>기획자 <span>(80%)</span>
+								</p>
+								<p>퍼블 <span>(100%)</span>
+								</p>
+							</li>
+						</ul>
+						<div class="description_div">
+							<p class="fnt_14 first_p">
+								회의실 예약 앱으로 현장용 사용을 위한 태블릿 버전과, 회의실 예약 & 회의실 관리를 위한 웹/앱 버전으로 분리되어 있습니다. 웹/앱 버전을 통해 회의실의 예약 가능 여부, 가능한 정원, 구비된 장비(프로젝터, 와이파이 등) 등 확인 및 예약이 가능하며, 현장용 태블릿을 통해 가입자 또는 가입자가 아닌 사람도 사용 가능하게 제작되었습니다. (태블릿 버전은 상단 프로젝트를 통해 케이스스터디를 확인하시기 바랍니다.)
+							</p> 
+
+							<p class="fnt_14 last_p">
+								기존 웹 버전을 기반으로 로고, 메인 색상, 장비 아이콘을 제외하곤 모든 부분은 새롭게 기획, 디자인, 퍼블 하였습니다. 요청사항 중 "여러 클릭 없이 한눈에 많은 정보를 보고 싶다"라는 제안을 최대한 반영하여 제작하였습니다.
+								
+							</p>
+						</div>
+					</div>
+					<div class="guide_div wd_1920 ">
+						<div class="grey_bg brdr pd_tp_160 pd_btm_160">
+							<span class="deco_line line_1"></span>
+							<span class="deco_line line_2"></span>
+							<span class="deco_dot dot_1 pink"></span>
+							<span class="deco_dot dot_2 hdck"></span>
+							<h2 class="fnt_30">디자인 가이드라인</h2>
+							<p class="des fnt_14">이 앱은 회의실 관리, 회의실 현황, 사용자 관리, 회의실 승인, 설정 <span class="break_line"></span>
+							이 다섯 개의 메뉴로 구성되어 있으며, 로고와 메인 색상 그리고 회의실 장비 아이콘을 <span class="break_line"></span>
+							제외한 모든 디자인, 기획, 퍼블이 홀로 제작되었습니다.</p>
+
+							<ul class="guide_ul ">
+								<li class="web_li">
+									<p class="brdr">웹 화면</p>
+								</li>
+								<li class="main_li">
+									<p class="brdr hdck">
+										<span class="title fnt_14">메인 색상</span>
+										<span class="des fnt_16">#2295F3</span>
+									</p>
+								</li>
+								<li class="font_li">
+									<p class="brdr pink">
+										<span class="title fnt_14">폰트</span>
+										<span class="des fnt_16">NanumSquare</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- #main ends -->
+
+				<!-- #contents -->
+				<div id="contents" class="">
+					<!-- #target -->
+					<section id="target">
+						<div class="target_div wd_1920 pd_tp_160">
+							<h1 class="fnt_50">고려한 부분들</h1>
+							<div class="description_div">
+								<p class="fnt_14 first_p">
+									규모가 큰 회사에서 사용이 많을 앱으로, 기본적인 성별과 나이로 사용자 성향을 반영하여 프로젝트에 임했습니다. 남성의 사용 비율이 여성보다 많으며, 40대에서 가장 많은 사용이 예상됩니다.
+									호불호가 없는 깔끔하고 직관적인 다자인이 답이라고 생각하였으며, 아바타를 통해 다소 심심할 수 있는 디자인에 재미를 부여하였습니다.
+								</p>
+							</div>
+							<ul class="target_ul mgn_tp_60 pd_tp_60">
+								<li class="gender_li">
+									<p class="title fnt_20">성별</p>
+									<p class="des fnt_14">남성이 63%, 여성이 37%로 앱의 메인 사용자는 남성에 비율이 높습니다.</p>
+									<ul class="gender_ul">
+										<li class="gender_graph_li">
+											<ul class="detail_ul">
+												<li class="gender_img_1">
+													<span class="chart_span two_panels">
+														<svg viewBox="0 0 63.6619772368 63.6619772368">
+															<circle class="pie1" style="stroke:#2295F3;" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+															<circle class="pie2" style="stroke:#e1e4e7;" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+														</svg>
+													</span>
+													<ul class="gen_ul ic_p">
+														<li>
+															<h2 class="fnt_20">남성</h2>
+														</li>
+														<li>
+															<p class="fnt_20">63%</p>
+														</li>
+													</ul>
+												</li>
+												<li class="gender_img_2">
+													<span class="chart_span two_panels second">
+														<svg viewBox="0 0 63.6619772368 63.6619772368">
+															<circle class="pie1" style="stroke:#2295F3;" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+															<circle class="pie2" style="stroke:#e1e4e7;" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+														</svg>
+													</span>
+													<ul class="gen_ul ic_p">
+														<li>
+															<h2 class="fnt_20">여성</h2>
+														</li>
+														<li>
+															<p class="fnt_20">37%</p>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="age_li">
+									<p class="title fnt_20">나이</p>
+									<p class="des fnt_14">60대를 제외한 20대부터 50대까지 다양한 연령대에서 사용됩니다.</p>
+									<ul class="age_ul">
+										<li class="">
+											<ul class="detail_ul">
+												<li class="li_1">
+													<h2 class="fnt_16">20대</h2>
+													<p class="grey_bg"><span class="color_span hdck">18%</span></p>
+												</li>
+												<li class="li_2">
+													<h2 class="fnt_16">30대</h2>
+													<p class="grey_bg"><span class="color_span hdck">29%</span></p>
+												</li>
+												<li class="li_3">
+													<h2 class="fnt_16">40대</h2>
+													<p class="grey_bg"><span class="color_span hdck">32%</span></p>
+												</li>
+												<li class="li_4">
+													<h2 class="fnt_16">50대</h2>
+													<p class="grey_bg"><span class="color_span hdck">19%</span></p>
+												</li>
+												<li class="li_5">
+													<h2 class="fnt_16">60대</h2>
+													<p class="grey_bg"><span class="color_span hdck"></span> 3%</p>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li class="design_li grey_bg brdr mgn_tp_100 pd_tp_100 pd_btm_100">
+									<h2 class="fnt_20">디자인 키워즈</h2>
+									<p class="des fnt_14">디자인 전 사용된 키워드를 나열해 보았습니다. <span class="break_line"></span>
+										모든 키워드를 충족시키는 디자인을 하진 않았지만, <span class="break_line"></span>
+										많은 부분을 반영하여 디자인하려 노력했습니다.</p>
+									<ul class="design_ul">
+										<li class="li_1">
+											<ul>
+												<li>SIMPLE</li>
+												<li>CLEAN</li>
+												<li>ALL GENDERS</li>
+												<li>ENCHANCING ELIGIBILITY</li>
+												<li>FRIENDLY</li>
+												<li>SIMPLE</li>
+												<li>CLEAN</li>
+											</ul>
+										</li>
+										<li class="li_2">
+											<ul>
+												<li>ENCHANCING ELIGIBILITY</li>
+												<li>FRIENDLY</li>
+												<li>SIMPLE</li>
+												<li>CLEAN</li>
+												<li>ALL GENDERS</li>
+												<li>ENCHANCING ELIGIBILITY</li>
+												<li>FRIENDLY</li>
+											</ul>
+										</li>
+										<li class="li_3">
+											<ul>
+												<li>CLEAN</li>
+												<li>ALL GENDERS</li>
+												<li>ENCHANCING ELIGIBILITY</li>
+												<li>FRIENDLY</li>
+												<li>SIMPLE</li>
+												<li>CLEAN</li>
+												<li>ENCHANCING ELIGIBILITY</li>
+											</ul>
+										</li>
+										<li class="li_4">
+											<ul>
+												<li>ALL GENDERS</li>
+												<li>ENCHANCING ELIGIBILITY</li>
+												<li>FRIENDLY</li>
+												<li>SIMPLE</li>
+												<li>CLEAN</li>
+												<li>ALL GENDERS</li>
+												<li>ENCHANCING ELIGIBILITY</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- #target ends -->
+
+					<!-- #img_title_1 -->
+					<section id="img_title_1" class="wd_100 mgn_tp_160">
+						<div class="img_title_div wd_1920 pd_tp_160">
+							<span class="deco_dot red"></span>
+							<div class="title_div gradi_bg pd_btm_100">
+								<h1 class="fnt_50">회의실을<br> 예약하세요</h1>
+								<p class="des fnt_14">메인 화면으로 미니 달력과 왼쪽 사이드 메뉴가 있으며, 메인 콘텐츠는 등록된 회의실 목록이 있습니다. <span class="break_line"></span>
+									회의실 사진 및 간단한 정보 그리고 예약 현황과 색상으로 구별 가능한 "예약바"가 디스플레이 됩니다.</p>
+								<p class="img_title_1 mgn_tp_100">호두클릭 메인 화면</p>
+							</div>
+						</div>
+					</section>
+					<!-- #img_title_1 ends -->
+					<!-- #content_1 -->
+					<section id="content_1" class="wd_1920 ">
+						<div class="content_div">
+							<ul>
+								<li class="li_1 wd_40per">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">왼쪽 사이드 메뉴</dt>
+											<dd class="des fnt_14">왼쪽 미니 달력 밑에 디스플레이되며, 일반 사용자용은 예약한 목록이 보이고 관리자용은 예약 승인 목록도 보입니다.
+											</dd>
+											<dd class="content_dd">
+												image of left side menu
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="li_2 wd_60per lt">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">예약 현황 UI</dt>
+											<dd class="des fnt_14">"예약바"를 통해 예약이 가능한 구조이며, 색상별로 예약 가능 여부를 구분하였습니다. 바의 배경색과 동일한 옅은 회색은 예약이 불가, 하얀색과 하늘색은 예약 가능, 
+												메인 색상인 파란색은 예약이 꽉 찬 상태, 노란색은 본인이 예약한 색상입니다.
+											</dd>
+										</dl>
+										<ul class="res_ui brdr">
+											<li class="li_1">
+												<span class="sp_1 grey_blue">Not Available</span>
+											</li>
+											<li class="li_2">
+												<span class="sp_2">Available to Book</span>
+											</li>
+											<li class="li_3">
+												<span class="sp_3 yellow">Your Reservation</span>
+											</li>
+											<li class="li_4">
+												<span class="sp_4 l_blue">Nearly Full</span>
+											</li>
+											<li class="li_5">
+												<span class="sp_5 hdck">Full</span>
+											</li>
+										</ul>
+									</div>
+								</li>
+								<li class="li_3">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">예약 창</dt>
+											<dd class="des fnt_14">예약창(모달)을 활용하여 별도 화면 전환 없이 예약을 진행합니다. 예약바 상단 회의실에 관한 필요한 정보(회의실 장비 아이콘, 정원)가 표시되며, 예약과 취소 버튼을 상단 오른쪽에 배치하였습니다. 직관적인 디자인으로서 별도 교육 없이 사용함에 문제가 없습니다.
+											</dd>
+											<dd class="content_dd">
+												image of reservaton modal
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+					</section>
+					<!-- #content_1 ends -->
+
+					<!-- .cont_2 -->
+					<div class="cont_2 grey_bg mgn_tp_300 pd_tp_160 pd_btm_300">
+						<!-- #img_title_2 -->
+						<section id="img_title_2" class="wd_100">
+							<div class="img_title_div wd_1920 pd_tp_160">
+								<span class="deco_dot hdck"></span>
+								<div class="title_div pd_btm_100">
+									<h1 class="fnt_50">달력으로 보는<br> 예약 현황</h1>
+									<div class="pagination"></div>
+									<p class="des fnt_14">회의실 현황을 월별, 주별, 일별로 달력에서 확인 가능합니다. <span class="break_line"></span>
+										회의실 별 색상이 구분되어 있어 예약을 확인하기에 수월합니다.</p>
+									<p class="img_title_1 img_title_2 mgn_tp_100">회의실 현황 화면</p>
+								</div>
+							</div>
+						</section>
+						<!-- #img_title_2 ends -->
+						<!-- #content_2 -->
+						<section id="content_2" class="wd_1920 ">
+							<div class="content_div">
+								<ul>
+									<li class="li_1 wd_60per rt">
+										<div class="grey_bg brdr">
+											회의실 이미지
+										</div>
+									</li>
+									<li class="li_2 wd_40per">
+										<div class="grey_bg white_bg brdr">
+											<dl>
+												<dt class="fnt_20">왼쪽 사이드 메뉴</dt>
+												<dd class="des fnt_14">회의실 목록과 회의실 검색이 가능하며, 전체 그리고 회의실 별 예약 개수가 디스플레이됩니다.
+ 												</dd>
+												<dd class="content_dd">
+													왼쪽 메뉴 이미지
+												</dd>
+											</dl>
+										</div>
+									</li>
+									<li class="li_3">
+										<div class="grey_bg white_bg brdr">
+											<dl>
+												<dt class="fnt_20">레이아웃</dt>
+												<dd class="des fnt_14">웹 버전에 기본이 되는 레이아웃으로 상단 바와 왼쪽 사이드, 오른쪽 메인 콘텐츠로 제작되었습니다.<span class="break_line"></span>  모든 섹션의 왼쪽 사이드 메뉴는 섹션별 색상으로 구분하였습니다.
+												</dd>
+												<dd class="content_dd">
+													레이아웃 이미지
+												</dd>
+											</dl>
+										</div>
+									</li>
+								</ul>
+								
+							</div>
+						</section>
+						<!-- #content_2 ends -->
+					</div>
+					<!-- .cont_2 ends -->
+
+
+					<!-- #img_title_3 -->
+					<section id="img_title_3" class="wd_100 mgn_tp_160">
+						<div class="img_title_div wd_1920 pd_tp_160">
+							<span class="deco_dot green"></span>
+							<span class="deco_dot purple"></span>
+							<div class="title_div gradi_bg pd_btm_100">
+								<h1 class="fnt_50">개별 회의실 관리</h1>
+								<p class="des fnt_14">등록한 회의실 정보를 보다 쉽고 한눈에 알아볼 수 있게 카드 형식으로 내용이 구분되어 있으며, <span class="break_line"></span>
+									예약, 수정, 삭제 등 회의실 관리에 불필요함을 줄였습니다.</p>
+								<p class="img_title_1 img_title_3 mgn_tp_100">회의실 관리 화면</p>
+							</div>
+						</div>
+					</section>
+					<!-- #img_title_3 ends -->
+					<!-- #content_3 -->
+					<section id="content_3" class="wd_1920 ">
+						<div class="content_div">
+							<ul>
+								<li class="li_1 wd_40per">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">왼쪽 사이드 메뉴</dt>
+											<dd class="des fnt_14">등록된 회의실 목록에서 원하는 회의실을 선택하여 메인 콘텐츠 영역에서 바로 관리할 수 있게 디자인되었습니다.
+											</dd>
+											<dd class="content_dd">
+												왼쪽 메뉴 이미지
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="li_2 wd_60per lt">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">회의실 추가</dt>
+											<dd class="des fnt_14">예약 등록과 동일하게 모달로 제작되었으며, 초기 세팅 시 편리성을 위해 상세한 내용보다 간단한 내용을 작성 후 바로 등록 가능하게 디자인하였습니다.
+											</dd>
+											<dd class="content_dd">
+												회의실 추가 이미지
+											</dd>
+										</dl>
+										
+									</div>
+								</li>
+								<li class="li_3">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">사용자(직원) 관리</dt>
+											<dd class="des fnt_14">사용자를 관리하는 화면으로 일반 그룹웨어에서 사용하는 기본적인 양식과 동일하게 디자인하였습니다. 초기 세팅 시 간편함을 위해 엑셀을 통해 멤버 등록이 가능하며, 다른 화면과 동일하게 상단 오른쪽에 멤버 추가, 삭제 버튼을 배치하였습니다.
+											</dd>
+											<dd class="content_dd">
+												사용자 관리 화면
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+					</section>
+					<!-- #content_3 ends -->
+
+					<!-- .cont_4 -->
+					<div class="cont_4 grey_bg mgn_tp_300 pd_tp_160 pd_btm_300">
+						<!-- #img_title_4 -->
+						<section id="img_title_4" class="wd_100">
+							<div class="img_title_div wd_1920 pd_tp_160">
+								<span class="deco_dot yellow"></span>
+								<div class="title_div pd_btm_100">
+									<h1 class="fnt_50">설정과<br> 아바타</h1>
+									<div class="pagination"></div>
+									<p class="des fnt_14">설정 화면을 통해 스마트폰(모바일 버전은 참여하지 않았습니다)과 <span class="break_line"></span>태블릿 설정을 변경할 수 있습니다.</p>
+									<p class="img_title_1 img_title_4 mgn_tp_100">설정 화면</p>
+								</div>
+							</div>
+						</section>
+						<!-- #img_title_4 ends -->
+						<!-- #content_4 -->
+						<section id="content_4" class="wd_1920 ">
+							<div class="content_div">
+								<ul>
+									<li class="li_1 wd_60per rt">
+										<div class="grey_bg brdr">
+											<p class="title fnt_30">태블릿 버전</p>
+											<p class="des fnt_16">탭 버전 케이스스터디를 하단 프로젝트에서 확인하세요.
+											</p>
+										</div>
+									</li>
+									<li class="li_2 wd_40per">
+										<div class="grey_bg white_bg brdr">
+											<dl>
+												<dt class="fnt_20">왼쪽 사이드 메뉴</dt>
+												<dd class="des fnt_14">사이트 제작 시 초기 단계로 일반, 스마트폰, 태블릿 3개의 섹션으로 제작되었으며, 향후 더 많은 섹션이 추가될 예정입니다.
+												</dd>
+												<dd class="content_dd">
+													왼쪽 메뉴
+												</dd>
+											</dl>
+										</div>
+									</li>
+									<li class="li_3">
+										<div class="grey_bg white_bg brdr">
+											<dl>
+												<dt class="fnt_20">아바타</dt>
+												<dd class="des fnt_14">6개의 아바타가 제작 당시 디자인되었으며, 사이트의 마스코트입니다. 아바타를 통해 직원의 사진을 대체할 수 있습니다.
+												</dd>
+											</dl>
+											<ul class="ch_ul">
+												<li class="ch_1 fnt_16">Roma</li>
+												<li class="ch_2 fnt_16">Sally</li>
+												<li class="ch_3 fnt_16">Earl</li>
+												<li class="ch_4 fnt_16">Henry</li>
+												<li class="ch_5 fnt_16">Soomi</li>
+												<li class="ch_6 fnt_16">Shiba</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								
+							</div>
+						</section>
+						<!-- #content_4 ends -->
+					</div>
+					<!-- .cont_4 ends -->
+
+					<!-- #content_5 -->
+					<section id="content_5" class="mgn_tp_300 pd_btm_300 wd_1920">
+						<div class="rel">
+							<a href="../kr/hdck_tb.html"><span>탭 버전<br>보러가기</span></a>
+						</div>
+					</section>
+					<!-- #content_5 ends -->
+
+				</div>
+				<!-- #contents ends -->
+
+				<!-- .top_btn -->
+				<div class="top_div">
+					<a href="#wrapper" class="top_btn">상단으로 가기</a>
+				</div>
+				<!-- .top_btn ends -->
+
+
+				<!-- #footer -->
+				<section id="footer" class="wd_1920 pd_btm_160 pd_tp_60">
+					<p class="eng_ft en">© 2024 KROWSMIG</p>
+				</section>
+				<!-- #footer ends -->
+			</div>
+
+			<!-- .main_bg ends -->
+		</div>
+		<!-- #wrapper ends-->
+
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/lenis.min.js"></script>
+		<script src="js/common.js"></script>
+		
+	</body>
+</html>

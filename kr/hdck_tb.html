@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+ 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>호두클릭 탭 버전 | KROWSMIG</title>
+		<meta name="description" content="회의실 관리와 예약이 가능한 호두클릭의 태블릿 버전으로 기획 과정과 디자인을 설명하는 케이스스터디 페이지입니다. KROWSMIG은 퍼블리싱이 가능한 웹/앱디자이너의 포트폴리오 사이트입니다.">
+		<meta name="keywords" content="호두클릭, 회의실 관리, 회의실 예약, 웹디자이너, 앱디자이너, 퍼블리셔, HTML, CSS, jQuery, Web Designer, App Designer, KROWSMIG">
+		<link rel="icon" href="../images/main/favicon.png">
+		<link rel="stylesheet" type="text/css" href="../css/default.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../css/hdck_tb.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+		
+		<script src="../js/jquery.js"></script>
+		<script src="../js/sub_script.js"></script>
+		<script src="../js/hdcktb_script.js"></script>
+
+		<style type="text/css">			
+		</style>
+
+		<script type="text/javascript">
+		</script>
+
+	</head>
+	<body>
+		<!-- #wrapper -->
+		<div id="wrapper">
+			<!-- .main_bg -->
+			<div class="main_div">
+
+				<!-- #gnb -->
+				<section id="gnb">
+					<div class="top_div">
+						<div class="rel_div">
+							<h1><a href="../index.html" class="logo"><span class="img_logo en">KROWSMIG</span></a></h1>
+							<div class="right">
+								<a href="../en/hdck_tb.html" class="en">EN</a>	
+								<a href="#" class="on">한글</a>
+							</div>
+							<!-- .nav -->
+							<div class="nav">
+								<div class="burger">
+									<h2>메뉴</h2>
+									<a href="">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<nav>
+									<a href="#projects" class="">프로젝트</a>	
+									<a href="#about" class="">연락처</a>
+								</nav>
+							</div>
+							<!-- .nav ends -->
+							<div class="btm_line"><span></span></div>
+						</div>
+					</div>
+				</section>
+				<!-- #gnb ends -->
+
+				<!-- #menu_div -->
+				<div id="menu_div">
+					<div class="menu_div">
+						<ul>
+							<li><a href="../kr/ltch.html">LITCH <span>뮤직 & OTT</span></a></li>
+							<li><a href="../kr/jndk.html">JANDIK <span>온라인 쇼핑몰</span></a></li>
+							<li><a href="../kr/hdwk.html">호두웍스 <span>전자결재</span></a></li>
+							<li><a href="../kr/hdhm.html">호두홈 <span>핫플 & 중고거래</span></a></li>
+							<li><a href="../kr/hddc.html">호두닥 <span>병원 예약</span></a></li>
+							<li><a href="../kr/hd.html">호두 <span>일정관리</span></a></li>
+							<li><a href="../kr/hdck.html">호두클릭 (웹 버전) <span>회의실 예약</span></a></li>
+						</ul>
+					</div>
+					<div class="cont_div">
+						<a href="mailto:krowsmig@gmail.com" title="클릭해서 이메일을 보내세요">
+							<svg width="100%" height="100%" viewBox="0 0 532 532" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+							    <g transform="matrix(1,0,0,1,-20805.4,1386.64)">
+							        <g transform="matrix(1,0,0,1,1469.09,-569.999)">
+							            <g id="grey" transform="matrix(0.919898,0.919898,-0.919898,0.919898,8533.94,-12545.7)">
+							                <path d="M12583.7,359.263L12391.2,551.841L12391.2,359.263L12583.7,359.263Z" style="fill:rgb(52,52,52);"/>
+							            </g>
+							            <g id="yellow" transform="matrix(0.919898,0.919898,0.919898,-0.919898,7872.97,-11530.5)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(0,79,239);"/>
+							            </g>
+							            <g id="yellow1" serif:id="yellow" transform="matrix(-0.919898,0.919898,-0.919898,-0.919898,31331.1,-11530.5)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(255,188,20);"/>
+							            </g>
+							            <g id="red" transform="matrix(0.919898,0.919898,-0.919898,0.919898,8533.94,-12191.4)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(255,83,0);"/>
+							            </g>
+							        </g>
+							    </g>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+				<!-- #main -->
+				<section id="main">
+					<div class="main wd_1920">
+						<div class="brdr main_bg mgn_btm_100">
+							<p class="img_1 main_img brdr">hoduclick tab</p>
+							<div class="img_2 main_img brdr"></div>
+						</div>
+					</div>
+					<div class="quick_div wd_1920 pd_btm_160 two">
+						<h1 class="fnt_30 pd_btm_40">호두클릭 <span>(탭 버전)</span></h1>
+						<ul class="summary_ul pd_btm_60">
+							<li class="pr_li">
+								<p class="title">프로그램</p>
+								<p>
+									<span class="ic ps">PSD</span>
+									<span class="ic ai">Ai</span>
+								</p>
+							</li>
+							<li class="yy_li">
+								<p class="title">제작 연도</p>
+								<p><span>2018</span></p>
+							</li>
+							<li class="in_li">
+								<p class="title">역할 (기여도)</p>
+								<p>디자이너 <span>(100%)</span>
+								</p>
+								<p>기획자 <span>(90%)</span>
+								</p>
+							</li>
+						</ul>
+						<div class="description_div">
+							<p class="fnt_14 first_p">
+								회의실 예약 앱인 호두클릭 태블릿 버전으로 제작된 프로젝트입니다. 웹과 앱을 통해 회의실 예약 후 태블릿을 통해 현장에서 사용자가 물리적으로 사용하게 되며, 태블릿은 회의실 입구에 배치합니다. 태블릿 버전은 영문으로 제작 요청이 들어왔고 3가지 모드(OCCUPIED 사용 중, WAITING 체크인 전, AVAILABLE 예약 가능)로 기획되었으며, 색상을 통해 직관적으로 사용자가 확인할 수 있게 디자인되었습니다.
+							</p>
+
+							<p class="fnt_14 last_p">
+								웹 버전 이전에 제작 요청이 들어왔고, 태블릿 버전의 사용목적의 특성상 웹 버전의 느낌과는 다소 다른 느낌의 앱으로 기획과 디자인이 진행되었습니다. 사용자 편리성을 위해 호두클릭 메인 색상을 배제하였고, 호두클릭 가입자 외 일반 사용자 역시 별도 교육 없이 사용할 수 있게 신호등을 연상케하는 색상으로 3가지 모드를 디자인하였습니다.
+							</p>
+						</div>
+					</div>
+					<div class="guide_div wd_1920 ">
+						<div class="pd_tp_160">
+							<h2 class="fnt_25">가이드라인</h2>
+							<div class="description_div">
+								<p class="des fnt_14 first_p">3가지 모드가 주된 앱으로 별도 교육 없이 모두가 사용 가능하게 제작하는 게 관건이었기에, 모두에게 친숙한 신호등에서 영감을 얻어 색상을 선택하였습니다.</p>
+							</div>
+							<ul class="guide_ul pd_tp_60 ">
+								<li>
+									<p class="img">image of three circles of each color</p>
+									<ul class="clr_ul">
+										<li class="">
+											<p class="">
+												<span class="clr red">빨강</span>
+												<span class="title fnt_16">OCCUPIED (사용 중)</span>
+												<span class="des fnt_14">첫 번째 모드로 외부인이 태블릿을 확인 후 회의실 입장이 불가하다는 사실을 색상을 통해 인지할 수 있게 빨간색으로 선택하였습니다. 빨간 배경 위 텍스트가 들어가기에 장시간 사용 시 눈의 피로감을 줄 수 있어 채도를 낮추었습니다.</span>
+											</p>
+										</li>
+										<li class="">
+											<p class="">
+												<span class="clr yellow">노랑</span>
+												<span class="title fnt_16">WAITING (체크인 전)</span>
+												<span class="des fnt_14">두 번째 모드로 회의 참석자가 희의 실 도착 시 사용 전 체크인이 필요하다는 신호를 알려주는 모드로 노란색으로 선택하였습니다. 노란색 역시 사용 중 모드에 맞추어 채도가 낮은 노란색으로 선택하였습니다.</span>
+											</p>
+										</li>
+										<li class="">
+											<p class="">
+												<span class="clr green">초록</span>
+												<span class="title fnt_16">AVAILABLE (지금 예약 가능)</span>
+												<span class="des fnt_14">세 번째 모드로 회의실이 현재 사용되지 않고 예약이 가능하다는 그린라이트를 밝히는 의미로 초록색을 선택하였습니다. 채도가 낮은 두 모드와 달리 이 모드의 경우 웹과 앱에서만 제어가 가능하여 밝은 계열의 초록을 사용하여 전반적인 디자인에 생기를 부여하였습니다.</span>
+											</p>
+										</li>
+									</ul>	
+								</li>
+								
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- #main ends -->
+
+				<!-- #contents -->
+				<div id="contents" class="">
+					<!-- #target -->
+					<section id="target">
+						<div class="target_div wd_1920">
+							<div class="pd_tp_160">
+								<ul class="target_ul">
+									<li class="gender_li">
+										<h2 class="fnt_20 pd_tp_160">성별</h2>
+										<p class="des fnt_14">
+											여성 40%, 남성 60%로 남성의 비율이 높고 웹 버전의 성별 서베이와 비슷한 비율로 보입니다. (웹 버전 케이스스터디는 상단 프로젝트에서 확인 가능합니다)
+										</p>
+										<ul class="detail_ul">
+											<li class="wd_40per">
+												<h3>여성</h3>
+												<p><span class="color_span bk_1">40%</span></p>
+											</li>
+											<li class="wd_60per">
+												<h3>남성</h3>
+												<p><span class="color_span bk_5">60%</span></p>
+											</li>
+										</ul>
+									</li>
+									<li class="age_li pd_tp_100">
+										<h2 class="fnt_20">나이</h2>
+										<p class="des fnt_14">
+											20대 19%, 30대 25%, 40대 31%, 50대 14%, 60대 11%로 40대 사용 비율이 가장 높고, 태블릿 버전의 경우 웹 버전과 달리 60대 비율이 현저히 높은 걸로 추정됩니다.
+										</p>
+										<ul class="detail_ul">
+											<li class="li_1">
+												<h3>20대</h3>
+												<p><span class="color_span bk_1"> 19%</span></p>
+											</li>
+											<li class="li_2">
+												<h3>30대</h3>
+												<p><span class="color_span bk_2">25%</span></p>
+											</li>
+											<li class="li_3">
+												<h3>40대</h3>
+												<p><span class="color_span bk_3">31%</span></p>
+											</li>
+											<li class="li_4">
+												<h3>50대</h3>
+												<p><span class="color_span bk_4">14%</span></p>
+											</li>
+											<li class="li_5">
+												<h3>60대</h3>
+												<p><span class="color_span bk_5">11%</span></p>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<div class="fnt_div">
+									<h2 class="fnt_20 pd_tp_160">폰트</h2>
+									<p class="des fnt_14">웹 버전에 사용된 Nanumsquare가 아닌 모든 호두시리즈의 폰트로 선택된 Noto Sans KR를 사용하였고, 
+										향 후 웹 버전도 번경하기로 계획하였습니다.
+										</p>
+									<div class="fnt_img">
+										<p class="title fnt_20">Noto Sans KR</p>
+										<p class="detail">
+											Aa
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<!-- #target ends -->
+
+
+					<!-- #img_title_1 -->
+					<section id="img_title_1" class="wd_1920 mgn_tp_200">
+						<div class="img_title_div pd_tp_200">
+							<h1 class="fnt_30">WAITING</h1>
+							<div class="description_div">
+								<p class="fnt_14 first_p">
+									체크인 전 모드로 예약 후 예약시간에 맞추어 도착 시 보이는 화면입니다. 이 모드는 예약시간 시작 후 10분 안에 체크인을 해야 회의실 사용이 가능하며, 체크인 없이 10분이 지날 시 예약이 취소됩니다. 3가지 모드 중 중간단계로 노란색으로 선택하였습니다.
+								</p>
+
+								<p class="fnt_14 last_p">
+									
+								</p>
+							</div>
+							<div class="gradi_bg pd_tp_160 mgn_tp_100">
+								<span class="deco_line line_1"></span>
+								<span class="deco_line line_2"></span>
+								<h2 class="fnt_50">회의실에 도착 했을때</h2>
+								<p class="fnt_16">
+									체크인 버튼을 클릭하여 예약한 회의실을 바로 사용할 수 있습니다. <span class="break_line"></span>
+									체크인 후 모드는 OCCUPIED (사용 중) 모드로 변환됩니다.
+								</p>
+								<p class="img_title_1 mgn_tp_60 lazy_img lazy_css">image of a web version of calendar </p>
+							</div>
+						</div>
+					</section>
+					<!-- #img_title_1 ends -->
+					<!-- #content_1 -->
+					<section id="content_1" class="wd_1920 ">
+						<div class="content_div">
+							<ul>
+								<li class="li_1 wd_50per">
+									<p class="grey_bg brdr lazy_img lazy_css">체크인 태블릿 버전 예제 이미지</p>
+								</li>
+								<li class="li_2 wd_50per lt">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">체크인 버튼</dt>
+											<dd class="des fnt_14">예약된 회의실은 예약된 시간으로부터 10분 안에 체크인이 필요하며, 체크인이 확인되지 않을 시 예약이 취소됩니다. 버튼 테두리를 활용하여 체크인까지 필요한 시간을 표현하였습니다.
+											</dd>
+											<dd class="content_dd lazy_img lazy_css">체크인 버튼 이미지</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="li_3">
+									<div class="grey_bg brdr">
+										<span class="cut_line"></span>
+										<ul>
+											<li>
+												<p class="title fnt_20">STATUS</p>
+												<p class="des fnt_14">STATUS는 현재 모드를 표시합니다. 모드는 WAITING(체크인 전), OCCUPIED(사용 중) AVAILABLE(예약 가능)이며, 폰트 사이즈를 키워 멀리서도 확인 가능하게 하였으며, 모드에 따라 배경색이 변경됩니다.</p>
+											</li>
+											<li>
+												<p class="title fnt_20">INFO</p>
+												<p class="des fnt_14">STATUS 모드의 관련된 내용이 출력되며, WAITING의 경우 체크인 까지 남은 시간, OCCUPIED의 경우 예약된 시간이 종료되기까지 남은 시간, AVAILABLE의 경우 다음예약까지 예약이 가능한 시간이 표시됩니다.</p>
+
+											</li>
+											<li class="content_img lazy_img lazy_css">
+												레이아웃 이미지
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+					</section>
+					<!-- #content_1 ends -->
+
+
+					<!-- #img_title_2 -->
+					<section id="img_title_2" class="wd_1920 mgn_tp_200">
+						<div class="img_title_div pd_tp_200">
+							<h1 class="fnt_30">OCCUPIED</h1>
+							<div class="description_div">
+								<p class="fnt_14 first_p">
+									"현재 사용 불가"를 의미하는 모드로, 체크인 후 다음 단계 모드입니다. 회사 직원의 회의실 출입을 통제하고, 사용 가능한 예약시간을 알려줍니다. 3모드 중 색상선택에 가장 고민을 많이 한 부분으로 빨간색 특성상 눈의 피로감을 최대한 줄이며 전반적인 디자인의 생기를 많이 놓치지 않은 빨간색으로 선택하였습니다.
+								</p>
+
+								<p class="fnt_14 last_p">
+									
+								</p>
+							</div>
+							<div class="gradi_bg pd_tp_160 mgn_tp_100">
+								<span class="deco_line line_1"></span>
+								<span class="deco_line line_2"></span>
+								<h2 class="fnt_50">회의실이 사용 중 일때</h2>
+								<p class="fnt_16">
+									"사용 불가"를 가장 잘 표현하는 색상인 빨간색이 선택되었고, <span class="break_line"></span>
+									회의 종료는 권한이 있는 사람만 조기 종료할 수 있습니다.
+								</p>
+								<p class="img_title_1 img_title_2 mgn_tp_60 lazy_img lazy_css">image of a web version of calendar </p>
+							</div>
+						</div>
+					</section>
+					<!-- #img_title_2 ends -->
+					<!-- #content_2 -->
+					<section id="content_2" class="wd_1920 ">
+						<div class="content_div">
+							<ul>
+								<li class="li_1 wd_50per">
+									<p class="grey_bg brdr lazy_img lazy_css">노트북을 켜놓고 회의를 하는 사람들의 손이 보이는 이미지입니다.</p>
+								</li>
+								<li class="li_2 wd_50per lt">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">종료 버튼</dt>
+											<dd class="des fnt_14">예약한 시간보다 회의가 짧아져 조기 퇴소를 원할 시 종료 버튼을 통해 가능하며, 버튼의 테두리를 사용하여 남은 예약시간을 표현하였습니다.
+											</dd>
+											<dd class="content_dd lazy_img lazy_css">image of the check-in button</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="li_3">
+									<div class="grey_bg brdr">
+										<span class="cut_line"></span>
+										<ul>
+											<li>
+												<p class="title fnt_20">MEETING ROOM</p>
+												<p class="des fnt_14">회의실명이 보이는 영역으로 옵션에 따라 회사명으로 변경 가능하며, 웹 버전 환경설정을 통해 디스플레이 옵션은 변경이 가능하게 기획되었습니다.</p>
+											</li>
+											<li>
+												<p class="title fnt_20">CURRENT TIME</p>
+												<p class="des fnt_14">현재 시간과 월, 일, 연도를 표시하는 영역으로 사용자가 다른 디바이스를 통해 별도로 시간을 확인하지 않고 태블릿을 통해 바로 확인 가능케 배치하였습니다.</p>
+
+											</li>
+											<li class="content_img lazy_img lazy_css">
+												태블릿 버전 레이아웃 이미지로 모든 텍스트가 회색 처리되었고, MEETING ROOM과 CURRENT TIME만 빨간색으로 표시하였습니다.
+											</li>
+										</ul>
+										
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+					</section>
+					<!-- #content_2 ends -->
+
+					<!-- #img_title_3 -->
+					<section id="img_title_3" class="wd_1920 mgn_tp_200">
+						<div class="img_title_div pd_tp_200">
+							<h1 class="fnt_30">AVAILABLE</h1>
+							<div class="description_div">
+								<p class="fnt_14 first_p">
+									예약이 없는 회의실에 경우 사용되는 모드로 예약이 가능하다는 그린라이트를 보내는 신호로 초록색을 선택하였습니다. 
+									프로젝트 제작 당시 태블릿 버전을 통해 예약 또한 가능하게 기획되었지만, 디자인이 마무리된 후 예약은 웹과 앱을 통해서만 가능하다는 통보를 받아 
+									약간에 변화가 있었습니다. 사전에 사실을 알았다면 초록색이 아닌 다른 색상을 선택하지 않았을까 생각합니다.
+								</p>
+
+								<p class="fnt_14 last_p">
+								</p>
+							</div>
+							<div class="gradi_bg pd_tp_160 mgn_tp_100">
+								<span class="deco_line line_1"></span>
+								<span class="deco_line line_2"></span>
+								<h2 class="fnt_50">회의실이 사용 가능 할 때</h2>
+								<p class="fnt_16">
+									회의실 예약이 필요하다면 <span class="break_line"></span>
+									웹과 앱을 통해 예약 가능합니다.
+								</p>
+								<p class="img_title_1 img_title_3 mgn_tp_60 lazy_img lazy_css">image of a web version of calendar </p>
+							</div>
+						</div>
+					</section>
+					<!-- #img_title_3 ends -->
+					<!-- #content_3 -->
+					<section id="content_3" class="wd_1920 ">
+						<div class="content_div">
+							<ul>
+								<li class="li_1 wd_50per">
+									<p class="grey_bg brdr lazy_img lazy_css">노트북으로 웹 버전을 사용하고 있는 사용자의 모습이 담긴 이미지</p>
+								</li>
+								<li class="li_2 wd_50per lt">
+									<div class="grey_bg brdr">
+										<dl>
+											<dt class="fnt_20">사용 가능한 시간</dt>
+											<dd class="des fnt_14">
+												다른 모드와 다르게 버튼이 아닌 시계 형태로 다음 예약까지 예약 가능한 시간이 센터에 보이고 테두리를 통해 예약 가능한 남은 시간이 표현됩니다. 예약은 웹과 앱 버전을 통해 가능하게 기획되었습니다.
+											</dd>
+											<dd class="content_dd lazy_img lazy_css">image of the check-in button</dd>
+										</dl>
+									</div>
+								</li>
+								<li class="li_3">
+									<div class="grey_bg brdr">
+										<span class="cut_line"></span>
+										<ul>
+											<li>
+												<p class="title fnt_20">BUTTON</p>
+												<p class="des fnt_14">중간 정렬된 텍스트와 하얀색 배경 원형으로 디자인된 버튼 영역으로 두꺼운 검정 테두리를 추가하였습니다. 검정 테두리 위 모드 색상과 동일한 색상의 테두리는 모드에 관련된 인디케이터 역할을 하는 테두리로 모드에 적합하게 변경됩니다.</p>
+											</li>
+											<li>
+												<p class="title fnt_20">SIDE MENU</p>
+												<p class="des fnt_14">예약자 목록 영역으로 예약자의 이름과 부서명, 예약시간이 표시되고 리스트 왼쪽에 화살표를 통해 현재 회의실 사용자를 표시해 줍니다. 목록은 시간대로 정렬되며 초록색 테두리, 폰트 색을 가지고 있는 리스트는 예약이 가능한 시간대를 알려줍니다.</p>
+
+											</li>
+											<li class="content_img lazy_img lazy_css">
+												image of layout
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							
+						</div>
+					</section>
+					<!-- #content_3 ends -->
+
+
+
+					<!-- #img_title_4 -->
+					<section id="img_title_4" class="wd_1920 mgn_tp_200">
+						<div class="img_title_div pd_tp_200">
+							<h1 class="fnt_30">다른 화면 옵션</h1>
+							<div class="description_div">
+								<p class="fnt_14 first_p">
+									데드라인 전 급하게 추가된 디스플레이 옵션 추가 요청으로 두 옵션에 차이가 크지 않습니다. 구비된 장비와 정원 등 메인 디스플레이에서 배제된 정보를 추가하여 기획과 디자인이 진행되었습니다.
+								</p>
+
+								<p class="fnt_14 last_p">
+									
+								</p>
+							</div>
+						</div>
+					</section>
+					<!-- #img_title_4 ends -->
+					<!-- #content_3 -->
+					<section id="content_4" class="wd_1920 ">
+						<div class="content_div">
+							<ul class="mgn_tp_100">
+								<li class="li_1 wd_60per">
+									<p class="grey_bg brdr lazy_img lazy_css">옵션 1 디스플레이 옵션 화면</p>
+								</li>
+								<li class="li_2 wd_40per lt">
+									<div class="grey_bg brdr">
+										<p class="fnt_30">옵션 1</p>
+									</div>
+								</li>
+								<li class="li_3 brdr grey_bg">
+									<p class="op_img lazy_img lazy_css">옵션 1 레이아웃 화면</p>
+									<ul>
+										<li>
+											<p class="title fnt_20">상단</p>
+											<p class="des fnt_14">기본 디스플레이 옵션의 회의실명이 회사명으로 교체하며, 구비된 장비를 아이콘으로 센터에 표시하여 회의실 입장 전 필요한 장비를 확인할 수 있습니다.</p>
+										</li>
+										<li>
+											<p class="title fnt_20">메인 컨텐츠</p>
+											<p class="des fnt_14">
+												회의실명과 현재 시간을 상단에 배치하고, 원형 버튼 형식의 모드를 바형과 별도 버튼을 추가하여 디자인하였습니다. 오른쪽 목록 콘텐츠는 메인 디스플레이와 동일합니다.
+											</p>
+										</li>
+									</ul>
+								</li>
+								<li class="li_4 li_2 wd_40per">
+									<div class="grey_bg brdr">
+										<p class="fnt_30">옵션 2</p>
+									</div>
+								</li>
+								<li class="li_5 li_1 wd_60per lt">
+									<p class="grey_bg brdr lazy_img lazy_css">옵션 2 디스플레이 옵션 화면</p>
+								</li>
+								
+								<li class="li_6 li_3 brdr grey_bg">
+									<p class="op_img lazy_img lazy_css">옵션 2 레이아웃 화면</p>
+									<ul>
+										<li>
+											<p class="title fnt_20">상단</p>
+											<p class="des fnt_14">
+												전반적인 디자인은 옵션 1과 동일하게 진행되었고 회의실명과 현재 시간을 추가하여 변경하였습니다.
+											</p>
+										</li>
+										<li>
+											<p class="title fnt_20">메인 컨텐츠</p>
+											<p class="des fnt_14">
+												옵션 1과 동일하게 디자인했습니다. 옵션 1과 다르게 모드 영역이 상하로 가운데 정렬이 되어있어 좀 더 안정감을 제공합니다.
+											</p>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							
+						</div>
+					</section>
+					<!-- #content_4 ends -->
+
+					<!-- #content_5 -->
+					<section id="content_5" class="mgn_tp_300 pd_btm_300 wd_1920">
+						<div class="rel">
+							<a href="../kr/hdck.html" class="lazy_img lazy_css"><span>데스크탑 버전 <br>보러가기</span></a>
+						</div>
+					</section>
+					<!-- #content_5 ends -->
+
+
+				</div>
+				<!-- #contents ends -->
+
+				<!-- .top_btn -->
+				<div class="top_div">
+					<a href="#wrapper" class="top_btn">상단으로 가기</a>
+				</div>
+				<!-- .top_btn ends -->
+
+
+				<!-- #footer -->
+				<section id="footer" class="wd_1920 pd_btm_160 pd_tp_60">
+					<p class="eng_ft en">© 2024 KROWSMIG</p>
+				</section>
+				<!-- #footer ends -->
+			</div>
+
+			<!-- .main_bg ends -->
+		</div>
+		<!-- #wrapper ends-->
+
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/lenis.min.js"></script>
+		<script src="js/common.js"></script>
+		
+	</body>
+</html>

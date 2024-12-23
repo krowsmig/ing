@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+ 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>호두닥 | KROWSMIG</title>
+		<meta name="description" content="호두 프리미엄 버전인 호두닥은 병원 예약과 진료 결과가 확인 가능한 앱으로 이 페이지는 호두닥의 기획과 디자인 과정을 성명하는 케이스스터디 페이지입니다. KROWSMIG은 퍼블리싱이 가능한 웹/앱디자이너의 포트폴리오 사이트입니다.">
+		<meta name="keywords" content="호두닥, 병원 예약, 진료 결과, 웹디자이너, 앱디자이너, 퍼블리셔, HODU, a calendar app, HTML, CSS, jQuery, Web Designer, App Designer, KROWSMIG">
+		<link rel="icon" href="../images/main/favicon.png">
+		<link rel="stylesheet" type="text/css" href="../css/default.css">
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<link rel="stylesheet" type="text/css" href="../css/hd_common.css">
+		<link rel="stylesheet" type="text/css" href="../css/hddc.css">
+
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+
+		
+		<script src="../js/jquery.js"></script>
+		<script src="../js/sub_script.js"></script>
+		<script src="../js/hddc_script.js"></script>
+
+		<style type="text/css">
+			
+		</style>
+		
+		<script type="text/javascript">
+		</script>
+
+	</head>
+	<body>
+		<!-- #wrapper -->
+		<div id="wrapper">
+			<!-- .main_bg -->
+			<div class="main_div">
+
+				<!-- #gnb -->
+				<section id="gnb">
+					<div class="top_div">
+						<div class="rel_div">
+							<h1><a href="../index.html" class="logo"><span class="img_logo en">KROWSMIG</span></a></h1>
+							<div class="right">
+								<a href="../en/hddc.html" class="">EN</a>	
+								<a href="#" class="on">한글</a>
+							</div>
+							<!-- .nav -->
+							<div class="nav">
+								<div class="burger">
+									<h2>메뉴</h2>
+									<a href="">
+										<span></span>
+										<span></span>
+										<span></span>
+									</a>
+								</div>
+								<nav>
+									<a href="#projects" class="">프로젝트</a>	
+									<a href="#about" class="">연락처</a>
+								</nav>
+								
+							</div>
+							<!-- .nav ends -->
+							<div class="btm_line"><span></span></div>
+						</div>
+					</div>
+				</section>
+				<!-- #gnb ends -->
+
+
+				<!-- #menu_div -->
+				<div id="menu_div">
+					<div class="menu_div">
+						<ul>
+							<li><a href="../kr/ltch.html">LITCH <span>뮤직 & OTT</span></a></li>
+							<li><a href="../kr/jndk.html">JANDIK <span>온라인 쇼핑몰</span></a></li>
+							<li><a href="../kr/hdwk.html">호두웍스 <span>전자결재</span></a></li>
+							<li><a href="../kr/hdhm.html">호두홈 <span>핫플 & 중고거래</span></a></li>
+							<li><a href="../kr/hd.html">호두 <span>일정관리</span></a></li>
+							<li><a href="../kr/hdck.html">호두클릭 (웹 버전) <span>회의실 예약</span></a></li>
+							<li><a href="../kr/hdck_tb.html">호두클릭 (탭 버전) <span>회의실 예약</span></a></li>
+						</ul>
+					</div>
+					<div class="cont_div">
+						<a href="mailto:krowsmig@gmail.com" title="클릭해서 이메일을 보내세요">
+							<svg width="100%" height="100%" viewBox="0 0 532 532" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+							    <g transform="matrix(1,0,0,1,-20805.4,1386.64)">
+							        <g transform="matrix(1,0,0,1,1469.09,-569.999)">
+							            <g id="grey" transform="matrix(0.919898,0.919898,-0.919898,0.919898,8533.94,-12545.7)">
+							                <path d="M12583.7,359.263L12391.2,551.841L12391.2,359.263L12583.7,359.263Z" style="fill:rgb(52,52,52);"/>
+							            </g>
+							            <g id="yellow" transform="matrix(0.919898,0.919898,0.919898,-0.919898,7872.97,-11530.5)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(0,79,239);"/>
+							            </g>
+							            <g id="yellow1" serif:id="yellow" transform="matrix(-0.919898,0.919898,-0.919898,-0.919898,31331.1,-11530.5)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(255,188,20);"/>
+							            </g>
+							            <g id="red" transform="matrix(0.919898,0.919898,-0.919898,0.919898,8533.94,-12191.4)">
+							                <path d="M12391.2,551.841L12391.2,359.263L12583.7,359.263L12391.2,551.841Z" style="fill:rgb(255,83,0);"/>
+							            </g>
+							        </g>
+							    </g>
+							</svg>
+						</a>
+					</div>
+				</div>
+
+
+				<!-- #main -->
+				<section id="main">
+					<div class="main wd_1920">
+						<div class="brdr main_bg mgn_btm_100">
+							<p class="img_1 main_img brdr">hodudoc app</p>
+							<div class="img_2 main_img brdr"></div>
+						</div>
+					</div>
+					<div class="quick_div wd_1920 pd_btm_160">
+						<h1 class="fnt_30 pd_btm_40">호두닥</h1>
+						<ul class="summary_ul pd_btm_60">
+							<li class="pr_li">
+								<p class="title">프로그램</p>
+								<p>
+									<span class="ic ps">PSD</span>
+									<span class="ic ai">Ai</span>
+								</p>
+							</li>
+							<li class="la_li">
+								<p class="title">개발</p>
+								<p>
+									<span>HTML</span>
+									<span>CSS</span>
+									<span>JS</span>
+								</p>
+							</li>
+							<li class="yy_li">
+								<p class="title">제작 연도</p>
+								<p><span>2019~20</span></p>
+							</li>
+							<li class="in_li">
+								<p class="title">역할 (기여도)</p>
+								<p>디자이너 <span>(100%)</span>
+								</p>
+								<p>기획자 <span>(90%)</span>
+								</p>
+								<p>퍼블 <span>(100%)</span>
+								</p>
+							</li>
+						</ul>
+						<div class="description_div">
+							<p class="fnt_14 first_p">
+								호두 프리미엄 버전으로 병원 찾기, 병원 예약, 진료현황 등 병원 관련 앱입니다. 기본 버전 그룹 탭을 통해 호두닥을 가입 후 사용 가능하며,
+								자주 방문하는 병원은 따로 저장되며 날짜 별 본인의 진료현황과 다음 진료 예약 또한 앱을 통해 손쉽게 관리 가능합니다.
+							</p>
+
+							<p class="fnt_14 last_p">
+								이 앱은 기본 버전 3차 리디자인이 끝난 후 기획 및 디자인되었습니다. 전반적인 디자인은 기본 버전과 동일한 형태로 진행하였고, 마음을 편안하게 하는 청록색을 메인 색상으로 선택하여 제작하였습니다.
+							</p>
+						</div>
+					</div>
+					<div class="guide_div grey_bg wd_full">
+						<div class="wd_1920 pd_tp_160 pd_btm_160">
+							<h2 class="fnt_25">가이드라인</h2>
+							<div class="description_div">
+								<p class="des fnt_14 first_p">로고와 메인 색상, 서브 색상, 폰트를 확인하세요.</p>
+							</div>
+							<ul class="guide_ul pd_tp_60 ">
+								<li class="logo_li">
+									<p class="brdr">로고 레이아웃 아이콘</p>
+								</li>
+								<li class="app_li">
+									<p class="brdr"><span>앱 아이콘</span></p>
+								</li>
+								<li class="main_li">
+									<p class="brdr">
+										<span class="title fnt_14">메인 색상</span>
+										<span class="des fnt_16">#42BFCE</span>
+									</p>
+								</li>
+								<li class="sub_li">
+									<p class="brdr">
+										<span class="title fnt_14">서브 색상</span>
+										<span class="des fnt_16">#F3F7F7</span>
+									</p>
+								</li>
+								<li class="font_li">
+									<p class="brdr">
+										<span class="title fnt_14">폰트</span>
+										<span class="des fnt_16">Noto Sans KR</span>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<!-- #main ends -->
+
+				<!-- #contents -->
+				<div id="contents" class="">
+					<!-- #target -->
+					<section id="target">
+						<div class="target_div wd_1920 pd_tp_160">
+							<h1 class="fnt_20">타겟층</h1>
+							<p class="pd_btm_60 des fnt_14">
+								병원 찾기, 예약 등 병원 방문이 잦은 사람들을 위주로 가장 많이 사용할 유저를 성별과 나이대로 비율을 찾아 디자인 전 단계에서 진행된 설문조사 결과입니다.
+							</p>
+							<ul class="target_ul">
+								<li class="gender_li">
+									<ul class="gender_ul grey_bg brdr">
+										<li class="gender_img">
+											<span class="hd_chart hddc_chart chart_span two_panels">
+												<svg viewBox="0 0 63.6619772368 63.6619772368">
+													<circle class="pie1" style="stroke:#42BFCE;" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+													<circle class="pie2" style="stroke:#FFB000;" cx="31.8309886184" cy="31.8309886184" r="15.9154943092"/>
+												</svg>
+											</span>
+											<p class="ic_p">
+												성별
+											</p>	
+										</li>
+										<li class="gender_graph_li">
+											<ul class="detail_ul">
+												<li>
+													<h2>여성</h2>
+													<p><span class="color_span doc">doc dolor</span> 68%</p>
+												</li>
+												<li>
+													<h2>남성</h2>
+													<p><span class="color_span yellow">yellow</span> 32%</p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<p class="fnt_14">여성(청록) 68%, 남성(노랑) 32%로 여성의 비율 월등히 높습니다. 여성의 경우 자녀의 대리 예약을 하는 경우가 많아 통계에 비율이 남성보다 높은 걸로 추측됩니다.</p>
+										</li>
+									</ul>
+								</li>
+								<li class="age_li">
+									<ul class="gender_ul grey_bg brdr">
+										<li class="gender_img age_img">
+											<span class="hd_chart hddc_chart chart_span five_panels">
+												<svg viewBox="0 0 63.6619772368 63.6619772368">
+													<circle class="pie6" cx="31.8309886184" style="stroke:#374d55;" cy="31.8309886184" r="15.9154943092"/>
+													<circle class="pie5" cx="31.8309886184" style="stroke:#C697FF;" cy="31.8309886184" r="15.9154943092"/>
+													<circle class="pie4" cx="31.8309886184" style="stroke:#00E674;" cy="31.8309886184" r="15.9154943092"/>
+													<circle class="pie3" cx="31.8309886184" style="stroke:#F32722;" cy="31.8309886184" r="15.9154943092"/>
+													<circle class="pie2" cx="31.8309886184" style="stroke:#FFB000;" cy="31.8309886184" r="15.9154943092"/>
+													<circle class="pie1" cx="31.8309886184" style="stroke:#42BFCE;" cy="31.8309886184" r="15.9154943092"/>
+												</svg>
+											</span>
+											<p class="ic_p">
+												나이
+											</p>	
+										</li>
+										<li class="age_graph_li">
+											<ul class="detail_ul">
+												<li>
+													<h2>10대</h2>
+													<p><span class="color_span green">green</span> 12%</p>
+												</li>
+												<li>
+													<h2>20대</h2>
+													<p><span class="color_span red">red</span> 19%</p>
+												</li>
+												<li>
+													<h2>30대</h2>
+													<p><span class="color_span doc">doc</span> 37%</p>
+												</li>
+												<li>
+													<h2>40대</h2>
+													<p><span class="color_span yellow">yellow</span> 25%</p>
+												</li>
+												<li>
+													<h2>50대</h2>
+													<p><span class="color_span purple">purple</span> 5%</p>
+												</li>
+												<li>
+													<h2>60대</h2>
+													<p><span class="color_span dark">dark</span> 2%</p>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<p class="fnt_14">10대(초록) 12%, 20대(빨강) 19%, 30대(청록) 37%, 40대(25%), 50대(5%), 60대(2%)로 30대의 비율이 가장 높으며, 40대의 비율 또한 높습니다.</p>
+										</li>
+									</ul>
+								</li>
+								<li class="user_li grey_bg brdr">
+									<h2 class="fnt_20">유저 플로우</h2>
+									<p class="des fnt_14">기본 버전 그룹 안에서 호두닥 메인 메뉴까지 플로우입니다.</p>
+									<p class="flow_img brdr mgn_tp_60">
+										유저 플로우 이미지
+									</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- #target ends -->
+
+					<!-- #img_title -->
+					<section id="img_title_1" class="grey_bg mgn_tp_160">
+						<div class="img_title_div wd_1920 pd_tp_160">
+							<p class="icon_p ic_hospital">병원 아이콘</p>
+							<h1 class="fnt_50">내 병원과<br>병원 검색하기</h1>
+							<p class="des fnt_16">방문했던 병원은 내 병원 탭에서 바로 확인, <span class="break_line"></span>
+								필요한 병원은 주변에서 바로 찾으세요.</p>
+							<p class="img_title_1 lazy_img lazy_css">내 병원과 검색 앱 이미지</p>
+						</div>
+					</section>
+					<!-- #img_title ends -->
+
+					<section id="content_1" class="wd_1920 pd_tp_160">
+						<div class="content_div">
+							<dl>
+								<dt class="fnt_20">내 병원</dt>
+								<dd class="des fnt_14 pd_btm_40">
+									예약이 가능한 최근 방문한 병원과 진료받은 의사의 인포를 상단에 배치하고, 하단에 예약했던 병원 목록을 배치하였습니다.
+									상단 디스플레이 옵션을 통해 카드 형식으로 변경 가능합니다.
+								</dd>
+							</dl>
+							<div class="content_dd">
+								<p class="wd_60per"><span class="grey_bg brdr hospital_1 two_imgs lazy_img lazy_css">내 병원 앱 이미지</span></p>
+								<p class="wd_40per"><span class="grey_bg brdr hospital_2 lazy_img lazy_css">내 병원 없을떄 앱 이미지</span></p>
+							</div>
+							<dl>
+								<dt class="fnt_20 mgn_tp_160">병원 검색</dt>
+								<dd class="des fnt_14 pd_btm_40">
+									주변 또는 원하는 병원을 검색 가능한 기능입니다. 검색어로 검색 시 병원 이미지를 포함한 목록이 뜨고, 지도를 통해 검색 시 원하는 지역의 주변 병원을 보여주고 길 찾기 기능 또한 사용합니다.
+								</dd>
+							</dl>
+							<div class="content_dd">
+								<p class="wd_40per rt"><span class="grey_bg brdr search_1 lazy_img lazy_css">검색 앱 이미지</span></p>
+								<p class="wd_60per lt"><span class="grey_bg brdr search_2 two_imgs lazy_img lazy_css">검색 지도 상세 앱 이미지</span></p>
+							</div>
+						</div>
+					</section>
+
+					<!-- #img_title -->
+					<section id="img_title_2" class="grey_bg mgn_tp_160">
+						<div class="img_title_div wd_1920 pd_tp_160">
+							<p class="icon_p ic_appointment">병원예약 아이콘</p>
+							<h1 class="fnt_50">병원 예약과<br>예약 현황</h1>
+							<p class="des fnt_16">검색한 병원을 선택하여 진료를 원하는 의사와 예약하고, <span class="break_line"></span>
+								진료 후 현황까지 앱에서 확인하세요.</p>
+							<p class="img_title_1 img_title_2 lazy_img lazy_css">예약하기 앱 이미지</p>
+						</div>
+					</section>
+					<!-- #img_title ends -->
+					<!-- #content_2 -->
+					<section id="content_2" class="wd_1920 pd_tp_160">
+						<div class="content_div">
+							<dl>
+								<dt class="fnt_20">병원 예약</dt>
+								<dd class="des fnt_14 pd_btm_40">
+									3가지 스텝으로 나누어지며, 병원을 검색 후 원하는 의사를 선택하여 가능한 시간대를 선택 후 예약 완료를 진행합니다. 원활한 진료를 위해 마지막 단계에서 방문 사유를 작성할 수 있는 텍스트인풋 영역을 추가하였습니다.
+								</dd>
+							</dl>
+							<div class="content_dd mk_apt">
+								<p class="wd_33per rt"><span class="grey_bg brdr appointment_1 lazy_img lazy_css">예약하기 1 앱 화면</span></p>
+								<p class="wd_33per mid"><span class="grey_bg brdr appointment_2 lazy_img lazy_css">예약하기 2 앱 화면</span></p>
+								<p class="wd_33per lt"><span class="grey_bg brdr appointment_3 lazy_img lazy_css">예약하기 3 앱 화면</span></p>
+							</div>
+							<dl>
+								<dt class="fnt_20 mgn_tp_160">예약현황</dt>
+								<dd class="des fnt_14 pd_btm_40">
+									예약 현황은 예약과 진료현황 두 개의 탭으로 구성하였으며, 기본 버전에서 일정과 같이 디스플레이되어 일정 리스트와 동일한 디자인으로 진행하였습니다.
+								</dd>
+							</dl>
+							<div class="content_dd">
+								<p class="wd_40per rt"><span class="grey_bg brdr list_appointments_1 lazy_img lazy_css">예약연황 앱 이미지</span></p>
+								<p class="wd_60per lt"><span class="grey_bg brdr list_appointments_2 flip two_imgs lazy_img lazy_css">진료현황 앱 이미지</span></p>
+							</div>
+							<dl>
+								<dt class="fnt_20 mgn_tp_160">호두맘</dt>
+								<dd class="des fnt_14 pd_btm_40">산모수첩 앱으로 산부인과 예약, 진료 결과, 태아 관련 인포 등 산모에게 필요한 앱입니다. 마음이 따뜻해지는 노란색으로 메인 색상을 선택하였고, 호두닥에서 파생된 앱입니다.
+								</dd>
+							</dl>
+							<div class="content_dd hmm">
+								<p class="wd_60per rel brdr">
+									<span class="grey_bg brdr hm_bg lazy_img lazy_css">산모 일러스트레이션 이미지</span>
+									<span class="hm_bg_gr lazy_img lazy_css"></span>
+									<span class="icon_hm">호두맘 아이콘</span>
+									<span class="title fnt_50">HODUMUM</span>
+									<span class="cont">
+										모든 가족 구성원에게 필요한 앱. 보고 싶은 우리 아이의 초음파 영상부터 평균 통계를 통해 주별 아이가 잘 자라고 있는지 확인 가능합니다.
+										이제 우리 아이의 건강기록과 추억을 잃어버릴 수 있는 종이 수첩이 아닌 평생 소장할 수 있는 호두맘 앱으로 관리하세요.
+									</span>
+								</p>
+								<p class="wd_40per"><span class="grey_bg brdr hm_img lazy_img lazy_css">산모수첩 앱 이미지</span></p>
+							</div>							
+						</div>
+					</section>
+					<!-- #content_2 ends -->
+
+					<!-- #img_title -->
+					<section id="other_pages" class="grey_bg mgn_tp_160">
+						<div class="img_title_div wd_1920 pd_tp_160">
+							<h1 class="fnt_20">Summary</h1>
+							<p class="img_title_1 img_title_other_pages lazy_img lazy_css">다른 화면 앱 이미지</p>
+						</div>
+					</section>
+					<!-- #img_title ends -->
+					<!-- #content_3 -->
+					<section id="content_rest" class="wd_1920 pd_tp_160">
+						<div class="content_div">
+							<dl>
+								<dt class="fnt_20">Hobot</dt>
+								<dd class="des fnt_14 pd_btm_40">
+									호두를 대표하는 캐릭터로 우주인을 모티브로 디자인하였습니다. 버전 메인 색상에 따라 우주인의 색상이 변경됩니다.
+								</dd>
+							</dl>
+							<div class="content_dd">
+								<p class="wd_60per"><span class="grey_bg brdr lazy_img lazy_css">1:1채팅 앱 이미지</span></p>
+								<p class="wd_40per"><span class="grey_bg brdr hbt_1 lazy_img lazy_css">Hobot 1 이미지</span><span class="grey_bg brdr hbt_2 lazy_img lazy_css">Hobot 2 이미지</span></p>
+							</div>
+							<dl>
+								<dt class="fnt_20 mgn_tp_160">아이콘</dt>
+								<dd class="des fnt_14 pd_btm_40">모든 버전에서 공통으로 사용된 아이콘과 버전 별 아이콘을 선별하였습니다.
+								</dd>
+							</dl>
+							<div class="content_dd ic_div">
+								<p class="wd_full brdr"><span class="grey_bg lazy_img lazy_css">아이콘 이미지</span><span class="gradi_bg_1"></span><span class="gradi_bg_2"></span></p>
+							</div>
+						</div>
+					</section>
+					<!-- #content_3 ends -->
+
+					<!-- .see_other -->
+					<section id="see_other">
+						<div class="wd_1920 pd_tp_160">
+							<h1 class="fnt_50">다른 버전</h1>
+							<p class="des fnt_14">하단 아이콘을 클릭하여 버전 별 케이스스터디를 확인하세요.</p>
+							<ul class="pd_btm_60">
+								<li class="hd"><a href="../kr/hd.html" alt="See HoduDoc"><span>호두</span></a></li>
+								<li class="hdwk"><a href="../kr/hdwk.html" alt="See HoduWorks"><span>호두웍스</span></a></li>
+								<li class="hdhm"><a href="../kr/hdhm.html" alt="See HoduHome"><span>호두홈</span></a></li>
+							</ul>
+							<div class="line"></div>
+						</div>
+					</section>
+
+				</div>
+				<!-- #contents ends -->
+
+				<!-- .top_btn -->
+				<div class="top_div">
+					<a href="#wrapper" class="top_btn">상단으로 가기</a>
+				</div>
+				<!-- .top_btn ends -->
+
+
+				<!-- #footer -->
+				<section id="footer" class="wd_1920 pd_btm_160 pd_tp_60">
+					<p class="eng_ft en">© 2024 KROWSMIG</p>
+				</section>
+				<!-- #footer ends -->
+			</div>
+
+			<!-- .main_bg ends -->
+		</div>
+		<!-- #wrapper ends-->
+
+		<script src="js/gsap.min.js"></script>
+		<script src="js/ScrollTrigger.min.js"></script>
+		<script src="js/lenis.min.js"></script>
+		<script src="js/common.js"></script>
+		
+	</body>
+</html>
