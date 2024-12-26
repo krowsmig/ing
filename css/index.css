@@ -112,7 +112,7 @@ body.contact #contact { top: 0; transform: skewY(0); }
 .fun_div img {width: 100%;background-color: #ff6006;margin-bottom: 7px;}
 #forfun .close {z-index: 100000000000;height: 100%;width: 100%;font-size: 0;position: absolute;left: 0;top: 0;}
 .pro_ul li .pro_div:after {content: '';display: block;height: 1px;background: #1c1c1c;position: absolute;top: -37px;transition: .4s;width: 0;left: 0;}
-#forfun .ic {font-size: 0;position: absolute;right: 50px;left: auto;top: 64px;width: 40px;height: 40px;border-radius: 5px;border: 1px solid rgba(255, 255, 255, 0.05);padding-top: 0;}
+#forfun .ic {font-size: 0;position: absolute;right: 50px;left: auto;top: 64px;width: 40px;height: 40px;border-radius: 5px;border: 1px solid rgba(255, 255, 255, 0.05);padding-top: 0;background-size:cover;background-image:url('../images/main/ic_fi.webp')}
 
 /* footer */
 footer p { z-index: 10; position:fixed; font-weight: 600; left: 20px; bottom: 20px; }
