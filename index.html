@@ -9,364 +9,195 @@
 		<link rel="icon" href="images/main/favicon.png">
 		<link rel="stylesheet" type="text/css" href="css/default.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css">
-		
+			
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
 		
 		<script src="js/jquery.js"></script>
 
 		<style type="text/css">
-			
 		</style>
-
-
-		<script type="text/javascript">
-			
-			$(document).ready(function(){
-				var noPannel = document.getElementsByClassName("short_ul_div").length;
-				  var i;
-				  var imgArr = [ ];
-				  var short_ul_divWidth = $(".slider_holder").width();
-				  var totalWidth = noshort_ul_div*short_ul_divWidth;
-
-				  
-				  for(i=1;i<=noshort_ul_div;i++)
-				  {
-				    $(".short_ul_div:nth-child("+i+")").css("background","url("+imgArr[i]+")");
-				  }
-				  function jsslider()
-				  {
-				    var curScroll = $(".slider").scrollLeft();
-				    var endScroll = totalWidth - (short_ul_divWidth*2);
-
-				    if(curScroll<=endScroll)
-				    {
-				      $(".slider").animate({scrollLeft: '+=' + short_ul_divWidth +'px'},900,"swing");// Replace 900 for speed
-				    }
-				    else
-				    {
-				      $(".slider").animate({scrollLeft: '0px'},500,"swing"); // Replace 500 for speed to go bck to first
-				    }
-				  }
-
-				  var interval = setInterval(jsslider, 3000); // Replace 3000 for delay between each slide.
-				  $(".short_ul_div").hover(function () {
-				    clearInterval(interval);
-				  }, function () {
-				    interval = setInterval(jsslider, 3000); // Replace 3000 for delay between each slide.
-				  });
-
-
-			});
-
-		</script>
 
 	</head>
 	<body class="">
 
-		<!-- <div class="loading">
-			<div class="rel">
-				<p>01</p>
-			</div>
-		</div> -->
-		<div id="wrapper" class="pro">
+		<div class="container">
+			<div class="counter"><p>0</p></div>
 
-			<header class="">
-				<div class="bg_clr"></div>
-					<h1><a href="index.html" class="fnt_clr">KROWSMIG</a></h1>
-					<nav>
-						<a href="" class="tab_0 fnt_clr ko">프로젝트</a>
-						<a href="" class="tab_1 on fnt_clr ko">내 소개</a>
-						<a href="index_en.html" class="lang fnt_clr">EN</a>
-					</nav>
-				
-			</header>
-
-			<section id="title" class="">
-				
-				<div class="title_div bg_clr">
-					<h1 class="fnt_clr ko">안녕하세요. 저는 디자이너 & 퍼블리셔입니다.</h1>
-					<h2 class="fnt_clr ko">저에 대해 간략하게 알려드리겠습니다.</h2>
-				</div>
-
+			<section class="ld">
+				<dis class="overlay"></dis>
 			</section>
-
-			<section id="projects" class="fl_pa">
-				<h1 class="no_txt">Projects</h1>
-
-				<ul class="pro_ul fl_ch fl_ch_1">
-					<li class="fl fl_9">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2024</p>
-								<p class="details fnt_clr ko">디자이너 / 기획자</p>
-								<h2 class="fnt_clr">YOURENERGY</h2>
-								<p class="type fnt_clr ko">에너지 드링크</p>
-							</div>
-							<div class="img_div">
-								<a href="">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-					<li class="fl fl_8">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2024</p>
-								<p class="details fnt_clr ko">디자이너 / 기획자</p>
-								<h2 class="fnt_clr">LITCH</h2>
-								<p class="type fnt_clr ko">뮤직 & OTT</p>
-							</div>
-							<div class="img_div">
-								<a href="kr/ltch.html">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-					<li class="fl fl_7">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2022</p>
-								<p class="details fnt_clr ko">디자이너 / 기획자</p>
-								<h2 class="fnt_clr">JANDIK</h2>
-								<p class="type fnt_clr ko">온라인 쇼핑몰</p>
-							</div>
-							<div class="img_div">
-								<a href="kr/jndk.html">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-					<li class="fl fl_6">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2021</p>
-								<p class="details fnt_clr ko">디자이너 / 기획자</p>
-								<h2 class="fnt_clr ko">호두웍스</h2>
-								<p class="type fnt_clr ko">전자결재</p>
-							</div>
-							<div class="img_div">
-								<a href="kr/hdwk.html">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-					<li class="fl fl_5">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2020</p>
-								<p class="details fnt_clr ko">디자이너 / 기획자</p>
-								<h2 class="fnt_clr ko">호두홈</h2>
-								<p class="type fnt_clr ko">핫플 & 중고거래</p>
-							</div>
-							<div class="img_div">
-								<a href="kr/hdhm.html">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-					<li class="fl fl_4">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2019 ~ 20</p>
-								<p class="details fnt_clr ko">디자이너 / 기획자 / 퍼블리셔</p>
-								<h2 class="fnt_clr ko">호두닥</h2>
-								<p class="type fnt_clr ko">병원 예약</p>
-							</div>
-							<div class="img_div">
-								<a href="kr/hddc.html">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-					<li class="fl fl_3">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2018 ~ 21</p>
-								<p class="details fnt_clr ko">디자이너 / 기획자 / 퍼블리셔</p>
-								<h2 class="fnt_clr ko">호두</h2>
-								<p class="type fnt_clr ko">일정관리</p>
-							</div>
-							<div class="img_div fnt_clr">
-								<a href="kr/hd.html">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-					<li class="fl fl_2">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2018</p>
-								<p class="details fnt_clr ko">디자이너 / 퍼블리셔</p>
-								<h2 class="fnt_clr ko">호두클릭 (웹)</h2>
-								<p class="type fnt_clr ko">회의실 관리</p>
-							</div>
-							<div class="img_div">
-								<a href="kr/hdck.html">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-					<li class="fl fl_1">
-						<div class="bg_deco_div">
-							<span class="deco_span"></span>
-						</div>
-						<div class="bg_clr li_div">
-							<div class="pro_div">
-								<p class="yyyy fnt_clr">2018</p>
-								<p class="details fnt_clr ko">디자이너 / 기획자</p>
-								<h2 class="fnt_clr ko">호두클릭 (탭)</h2>
-								<p class="type fnt_clr ko">회의실 관리</p>
-							</div>
-							<div class="img_div">
-								<a href="kr/hdck_tb.html">케이스 스터디</a>
-							</div>
-						</div>
-					</li>
-				</ul>
-
-			</section>
-
-			<section id="about" class="">
-				<div class="abt_div">
-					<h1 class="no_txt bg_clr">About Me</h1>
-
-					<ul class="short_ul">
-						<li class="des_li bg_clr">
-							<div class="short_ul_div">
-								<div class="li_div">
-									<h2 class="fnt_clr ko">디자인 툴</h2>
-									<span class="breakline"></span>
-									<div class="short_div">
-										<div class="deco_div">
-											<span class="deco_1 fnt_clr">(</span><span class="deco_2 fnt_clr">)</span>
-										</div>
-										<p class="fnt_clr ko">피그마</p>
-										<p class="fnt_clr ko">포토샵</p>
-										<p class="fnt_clr ko">일러스트레이터</p>
-										<p class="fnt_clr ko">어피니티</p>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="dev_li bg_clr">
-							<div class="short_ul_div">
-								<div class="li_div">
-									<h2 class="fnt_clr ko">개발</h2>
-									<span class="breakline"></span>
-									<div class="short_div">
-										<div class="deco_div">
-											<span class="deco_1 fnt_clr">{</span><span class="deco_2 fnt_clr">}</span>
-										</div>
-										<p class="fnt_clr">HTML & CSS</p>
-										<p class="fnt_clr">jQuery</p>
-										<p class="fnt_clr">GSAP</p>
-										<p class="fnt_clr">크로스 브라우징</p>
-									</div>
-								</div>
-							</div>
-						</li>
-						<li class="rol_li bg_clr">
-							<div class="short_ul_div">
-								<div class="li_div">
-									<h2 class="fnt_clr ko">역할</h2>
-									<span class="breakline"></span>
-									<div class="short_div">
-										<div class="deco_div">
-											<span class="deco_1 fnt_clr">[</span><span class="deco_2 fnt_clr">]</span>
-										</div>
-										<p class="fnt_clr ko">웹 디자이너</p>
-										<p class="fnt_clr ko">앱 디자이너</p>
-										<p class="fnt_clr ko">그래픽 디자이너</p>
-										<p class="fnt_clr ko">퍼블리셔</p>
-									</div>
-								</div>
-							</div>
-						</li>
-					</ul>
-
-					<div class="myslf_div">
-						<h2 class="no_txt">A little bit about myself</h2>
-						<ul class="myslf_ul">
-							<li class="bg_clr">
-								<p class="fnt_clr ko">
-									그래픽 디자인을 전공후 프리랜스 그래픽 디자이너로 활동하며 명함, 브로슈어, 포스터, UI 디자인 등 여러 작업을 하였습니다. 
-									시간이 흘러 제 디자인을 통해 더 많은 오디언스와 소통하고 싶었던 저는 웹디자이너로 전향하기를 결심하였고, 
-									웹디자인 스킬업을 위해 퍼블리싱을 공부하였습니다.
-								</p>
-								<p class="fnt_clr ko">
-									수년간 경력이 쌓이고 디자인의 스펙트럼이 넓어져도 항상 새로운 프로젝트를 통해 많은 걸 배우고 있습니다.
-									이러한 부분이 빠르게 변화하는 이 분야에 가장 큰 장점이 아닐까 생각합니다.
-									저는 현재 디자이너 & 퍼블리셔로 활동 중이고 GSAP을 공부하며 매일매일 즐거운 디자인 & 코딩을 하고 있습니다.
-								</p>
-							</li>
-							<li class="bg_clr email_link_li">
-								<!-- <img src="logo.svg" alt="logo"/> -->
-								<a href="mailto:krowsmig@gmail.com" class="logo_div email_link">
-									<div class="scale_div">
-										<span class="span_1"></span>
-										<span class="span_2"></span>
-										<span class="span_3"></span>
-										<span class="span_4"></span>
-									</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</section>
-
-			<section id="forfun">
-				<div class="fun_div">
-					<div class="fun_bg wd_1920">
-						<h2>YOURENERGY</h2>
-						<p>2024 (케이스 스터디 준비 중)</p>
-						<p class="ic fi">Figma</p>
-						<div class="fun_descript">
-							<p>본인에게 필요한 비타민을 원하는 맛과 타입(젤리, 캔디, 음료)으로 제작해주는 회사입니다.</p>
-						</div>
-						<div class="fun_img">
-							<img src="images/main/energy_cont_1.png" class="img_1" alt="YOURENERGY 메인화면 1">
-							<img src="images/main/energy_cont_2.png" class="img_2" alt="YOURENERGY 메인화면 2">
-							<img src="images/main/energy_cont_3.png" class="img_3" alt="YOURENERGY 메인화면 3">
-							<img src="images/main/energy_cont_4.png" class="img_4" alt="YOURENERGY 메인화면 3">
-						</div>
-						<a href="" class="close">닫기</a>
-					</div>
-				</div>
-			</section>
-
-			<footer class="bg_clr">
-				<p class="fnt_clr">© 2024 KROWSMIG</p>
-				<a href="mailto:krowsmig@gmail.com" class="email_link fnt_clr">krowsmig@gmail.com</a>
-			</footer>
-
 		</div>
+
+
+
+		<header class="opa_2">
+			<h1><a href="#main">KROWSMIG</a></h1>
+			<nav>
+				<a href="">CONTACT</a>
+				<a href="index_en.html" class="en">EN</a>
+			</nav>
+		</header>
+
+		<section id="main" class="opa">
+			<h1>PROJECTS</h1>
+		</section>
+
+		<section id="projects">
+			<ul>
+				<li class="li_0">
+					<div class="rnd  opa_2">
+						<h2>YOURENERGY</h2>
+						<a href="#">케이스 스터디</a>
+					</div>		
+				</li>
+				<li class="li_1">
+					<div class="rnd dark">
+						<h2>LITCH</h2>
+						<a href="kr/ltch.html">케이스 스터디</a>
+					</div>		
+				</li>
+				<li class="li_2">
+					<div class="rnd">
+						<h2>JANDIK</h2>
+						<a href="kr/jndk.html">케이스 스터디</a>
+					</div>		
+				</li>
+
+				<li class="li_3">
+					<div class="rnd dark">
+						<h2>HODUWORKS</h2>
+						<a href="kr/hdwks.html">케이스 스터디</a>
+					</div>		
+				</li>
+				<li class="li_4">
+					<div class="rnd">
+						<h2>HODUHOME</h2>
+						<a href="kr/hdhm.html">케이스 스터디</a>
+					</div>		
+				</li>
+				<li class="li_5">
+					<div class="rnd">
+						<h2>HODUDOC</h2>
+						<a href="kr/hddc.html">케이스 스터디</a>
+					</div>		
+				</li>
+
+				<li class="li_6">
+					<div class="rnd">
+						<h2>HODU</h2>
+						<a href="kr/hd.html">케이스 스터디</a>
+					</div>		
+				</li>
+				<li class="li_7">
+					<div class="rnd">
+						<h2>HODUCLICK</h2>
+						<a href="kr/hdck.html">케이스 스터디</a>
+					</div>		
+				</li>
+				<li class="li_8">
+					<div class="rnd">
+						<h2>HODUCLICK</h2>
+						<a href="kr/hdcktb.html">케이스 스터디</a>
+					</div>		
+				</li>
+			</ul>
+			
+		</section>
+
+		<section id="contact">
+
+			<div class="cont_div">
+				<h1>CONTACT</h1>
+
+				<ul class="about_ul">
+					
+					<li class="li_0 on">
+						<h2><a href="" class="ko">디자이너</a></h2>
+						<h3 class="ko">디자인 툴</h3>
+						<span class="line"></span>
+						<ul class="rel">
+							<li class="deco">(</li>
+							<li>FIGMA</li>
+							<li>PHOTOSHOP</li>
+							<li>ILLUSTRATOR</li>
+							<li>AFFINITY</li>
+							<li class="deco">)</li>
+						</ul>
+					</li>
+
+					<li class="li_1">
+						<h2><a href="" class="ko">퍼블리셔</a></h2>
+						<h3 class="ko">개발</h3>
+						<span class="line"></span>
+						<ul class="rel">
+							<li class="deco">{</li>
+							<li>HTML & CSS</li>
+							<li>JQUERY</li>
+							<li>GSAP</li>
+							<li>CROSS-BROWSING</li>
+							<li class="deco">}</li>
+						</ul>
+					</li>
+
+					<li class="li_2">
+						<h2><a href="" class="ko">내 소개</a></h2>
+						<div class="rel">
+							<p class="ko">
+								그래픽 디자인을 전공후 프리랜스 그래픽 디자이너로 활동하며 명함, 브로슈어, 포스터, UI 디자인 등 여러 작업을 하였습니다. 
+								시간이 흘러 제 디자인을 통해 더 많은 오디언스와 소통하고 싶었던 저는 웹디자이너로 전향하기를 결심하였고, 
+								웹디자인 스킬업을 위해 퍼블리싱을 공부하였습니다.
+							</p>
+							<p class="ko">
+								수년간 경력이 쌓이고 디자인의 스펙트럼이 넓어져도 항상 새로운 프로젝트를 통해 많은 걸 배우고 있습니다.
+								이러한 부분이 빠르게 변화하는 이 분야에 가장 큰 장점이 아닐까 생각합니다.
+								저는 현재 디자이너 & 퍼블리셔로 활동 중이고 GSAP을 공부하며 매일매일 즐거운 디자인 & 코딩을 하고 있습니다.
+							</p>
+						</div>	
+					</li>
+
+				</ul>
+				<a class="email" href="mailto:krowsmig@gmail.com">krowsmig@gmail.com</a>
+				<a href="" class="close_btn">close <span></span><span></span></a>
+			</div>
+		</section>
+
+		<section id="forfun">
+			<div class="fun_div">
+				<div class="fun_bg wd_1920">
+					<h2>YOURENERGY</h2>
+					<p>2024 (케이스 스터디 준비 중)</p>
+					<p class="ic fi">Figma</p>
+					<div class="fun_descript">
+						<p>본인에게 필요한 비타민을 원하는 맛과 타입(젤리, 캔디, 음료)으로 제작해주는 회사입니다.</p>
+					</div>
+					<div class="fun_img">
+						<img src="images/main/energy_cont_1.png" class="img_1" alt="YOURENERGY 메인화면 1">
+						<img src="images/main/energy_cont_2.png" class="img_2" alt="YOURENERGY 메인화면 2">
+						<img src="images/main/energy_cont_3.png" class="img_3" alt="YOURENERGY 메인화면 3">
+						<img src="images/main/energy_cont_4.png" class="img_4" alt="YOURENERGY 메인화면 3">
+					</div>
+					<a href="" class="close">닫기</a>
+				</div>
+			</div>
+		</section>
+
+		<footer class="opa_2">
+			<p class="fnt_clr">© 2024 KROWSMIG</p>
+			<a href="mailto:krowsmig@gmail.com" class="email_link fnt_clr ko">이메일 보내기</a>
+		</footer>
 
 		<script src="js/gsap.min.js"></script>
 		<script src="js/ScrollTrigger.min.js"></script>
-		<script src="js/lenis.min.js"></script>
+		<script src="js/CustomEase.min.js"></script>
 		<script src="js/main.js"></script>
+
+		<script type="text/javascript">
+			
+		</script>
 		
 	</body>
 </html>
