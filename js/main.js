@@ -1,114 +1,412 @@
+document.addEventListener("DOMContentLoaded", () => {
+	// gsap.registerPlugin(CustomEase);
+	// CustomEase.create(
+	// 	"hop",
+	// 	"M0,0 C0.29,0 0.348,0.05 0.422,0.134 0.494,0.217 00.484,0.355 0.5 0.518,0.662 0.515,0.793 0.596,0.876 0.701,0.983 0.72,0.987 1,1"
+	// );
+
+	// function splitTextIntoSpans(selector) {
+	// 	let elements = document.querySelectorAll(selector);
+	// 	elements.forEach((element) => {
+	// 		let text = element.innerText;
+	// 		let splitText = innerText
+	// 			.split("")
+	// 			.map(function (char) {
+	// 				return '<span>$(char === " " ? "&nbsp;&nbsp;" : char}</span>';
+
+	// 			})
+	// 			.join("");
+	// 			element.innerHTML = splitText;
+	// 	});
+	// }
+
+	// splitTextIntoSpans(".header h1");
+
+	function animateCounter() { 
+		const counterElement = document.querySelector(".counter p");
+		let currentValue = 0;
+		const updateInterval = 300;
+		const maxDuration = 2000;
+		const endValue = 100;
+		const startTime = Date.now();
+
+		function upadteCounter() {
+			const elapsedTime = Date.now() - startTime;
+			if ( elapsedTime < maxDuration ) {
+				currentValue = Math.min(
+					currentValue + Math.floor(Math.random() * 30) + 5, 
+					endValue
+				);
+				counterElement.textContent = currentValue;
+				setTimeout(upadteCounter, updateInterval);
+			} else {
+				counterElement.textContent = currentValue;
+				setTimeout(() => {
+					gsap.to(counterElement, {
+						// y: -60,
+						opacity:0,
+						duration: .5,
+						ease: "power3.inOut",
+						onStart: () => {
+							revealLandingPage();
+						},
+					});
+				}, -100);
+			}
+		}
+
+		upadteCounter();
+	}
+
+	gsap.to(".counter p", {
+		y: 0,
+		duration: .5,
+		ease: "power3.out",
+		delay: .1,
+		onComplete: animateCounter,
+	});
+
+	function revealLandingPage() { 
+		gsap.to(".ld", {
+			clipPath: "polygon(0% 200%, 200% 200%, 200% 0%, 0% 0%)",
+			duration: 1,
+			ease: "hop",
+			onStart: () => {
+				gsap.to(".opa", {
+					y: 0,
+					opacity: 1,
+					duration: 1,
+					delay: 1,
+				});
+				gsap.to(".opa_2", {
+					// y: -200,
+					opacity: 1,
+					duration: 1,
+					delay: 2.1,
+				});
+				gsap.to(".ld", {
+					// transform: "translate(-50%, -50%) scale(1)",
+					duration: 2,
+					ease: "power3.inOut",
+					delay: 0,
+				});
+				gsap.to(".overlay", {
+					clipPath: "polygon(0% 0%, 200% 0%, 200% 0%, 0% 0%)",
+					duration: 2,
+					delay: 0.5,
+					ease: "hop",
+				});
+				gsap.to("body", {
+					overflowY: "auto",
+					stagger: 0.1,
+					duration: 0.4,
+					ease: "power4.inOut",
+					delay: 0.75,
+				});
+			},
+		});
+	}
+
+});
+
+
 gsap.registerPlugin(ScrollTrigger);
+
+var tl = gsap.timeline();
+	tl.to("#projects .li_0 .rnd", { translateY: 0, width: "100%", duration: 2});
+	tl.to("body", {backgroundColor: "#CFCDCB", duration: 2, delay: 0});
+	tl.to("#main h1", { y:-100, opacity: 0, duration: 3, delay: 0, skewY: "20deg"}, '-=3');
+	tl.to("#projects .li_0 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+	// tl.to("#about .rnd p", { opacity: 1, duration: 2}, "-=2");
+	tl.to("#projects .li_1 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+
+ScrollTrigger.create({
+	trigger: "#main",
+	animation: tl,
+	start: "top top",
+	// duration: 3,
+	ease: "power0.inOut",
+	snap: 1,
+	scrub: true,
+	stagger: .3,
+
+
+});
+
+
+var tl_1 = gsap.timeline();
+
+	tl_1.to("#projects .li_1 .rnd", { translateY: 0, width: "100%", duration: 3});
+	tl_1.to("body", {backgroundColor: "#787878", duration: 2, delay: 0});
+	tl_1.to("#projects .li_1 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+	// tl_1.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
+	tl_1.to("#projects .li_0 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_1.to("#projects .li_2 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_1.to("#projects .li_0 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
+
+
+
+ScrollTrigger.create({
+	trigger: "#projects .li_0",
+	animation: tl_1,
+	start: "top top",
+	duration: 1,
+	ease: "power0.inOut",
+	snap: 1,
+	scrub: true,
+	stagger: .3,
+
+
+});
+
+
+var tl_2 = gsap.timeline();
+
+	tl_2.to("#projects .li_2 .rnd", { translateY: 0, width: "100%", duration: 2});
+	tl_2.to("body", {backgroundColor: "#B8B8B8", duration: 2, delay: 0});
+	tl_2.to("#projects .li_2 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+
+	// tl_2.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
+	tl_2.to("#projects .li_1 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_2.to("#projects .li_3 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_2.to("#projects .li_1 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
+
+
+
+ScrollTrigger.create({
+	trigger: "#projects .li_1",
+	animation: tl_2,
+	start: "top top",
+	duration: 1,
+	ease: "power3.inOut",
+	snap: 1,
+	scrub: true,
+	stagger: .3,
+
+});
+
+
+var tl_3 = gsap.timeline();
+
+	tl_3.to("#projects .li_3 .rnd", { translateY: 0, width: "100%", duration: 2, delay: 2});
+	tl_3.to("body", {backgroundColor: "#66696D", duration: 2, delay: 0});
+	tl_3.to("#projects .li_3 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+
+	// tl_3.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
+	tl_3.to("#projects .li_2 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_3.to("#projects .li_4 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_3.to("#projects .li_2 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
+
+
+
+ScrollTrigger.create({
+	trigger: "#projects .li_2",
+	animation: tl_3,
+	start: "top top",
+	duration: 1,
+	ease: "power3.inOut",
+	snap: 1,
+	scrub: true,
+	stagger: .3,
+
+
+});
+
+
+var tl_4 = gsap.timeline();
+
+	tl_4.to("#projects .li_4 .rnd", { translateY: 0, width: "100%", duration: 2});
+	tl_4.to("body", {backgroundColor: "#c3c1c5", duration: 2, delay: 0});
+	tl_4.to("#projects .li_4 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+
+	// tl_4.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
+	tl_4.to("#projects .li_3 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_4.to("#projects .li_5 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_4.to("#projects .li_3 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
+
+
+
+ScrollTrigger.create({
+	trigger: "#projects .li_3",
+	animation: tl_4,
+	start: "top top",
+	duration: 1,
+	ease: "power3.inOut",
+	snap: 1,
+	scrub: true,
+	stagger: .3,
+
+
+});
+
+var tl_5 = gsap.timeline();
+
+	tl_5.to("#projects .li_5 .rnd", { translateY: 0, width: "100%", duration: 2});
+	tl_5.to("body", {backgroundColor: "#cdd0d0", duration: 2, delay: 0});
+	tl_5.to("#projects .li_5 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+
+	// tl_5.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
+	tl_5.to("#projects .li_4 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_5.to("#projects .li_6 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_5.to("#projects .li_4 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
+
+
+
+ScrollTrigger.create({
+	trigger: "#projects .li_4",
+	animation: tl_5,
+	start: "top top",
+	duration: 1,
+	ease: "power3.inOut",
+	snap: 1,
+	scrub: true,
+
+
+});
+
+
+var tl_6 = gsap.timeline();
+
+	tl_6.to("#projects .li_6 .rnd", { translateY: 0, width: "100%", duration: 2});
+	tl_6.to("body", {backgroundColor: "#b5b8ba", duration: 2, delay: 0});
+	tl_6.to("#projects .li_6 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+
+	// tl_6.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
+	tl_6.to("#projects .li_5 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_6.to("#projects .li_7 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_6.to("#projects .li_5 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
+
+
+
+ScrollTrigger.create({
+	trigger: "#projects .li_5",
+	animation: tl_6,
+	start: "top top",
+	duration: 1,
+	ease: "power3.inOut",
+	snap: 1,
+	scrub: true,
+
+
+});
+
+var tl_7 = gsap.timeline();
+
+	tl_7.to("#projects .li_7 .rnd", { translateY: 0, width: "100%", duration: 2});
+	tl_7.to("body", {backgroundColor: "#abaeaf", duration: 2, delay: 0});
+	tl_7.to("#projects .li_7 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+
+	// tl_7.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
+	tl_7.to("#projects .li_6 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_7.to("#projects .li_8 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_7.to("#projects .li_6 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
+
+
+
+ScrollTrigger.create({
+	trigger: "#projects .li_6",
+	animation: tl_7,
+	start: "top top",
+	duration: 1,
+	ease: "power3.inOut",
+	snap: 1,
+	scrub: true,
+
+
+});
+
+var tl_8 = gsap.timeline();
+
+	tl_8.to("#projects .li_8 .rnd", { translateY: 0, width: "100%", duration: 2});
+	tl_8.to("body", {backgroundColor: "#c3beb0", duration: 2, delay: 0});
+	tl_8.to("#projects .li_8 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
+
+	// tl_8.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
+	tl_8.to("#projects .li_7 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	// tl_8.to("#projects .li_9 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+	tl_8.to("#projects .li_7 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
+
+
+
+ScrollTrigger.create({
+	trigger: "#projects .li_7",
+	animation: tl_8,
+	start: "top top",
+	duration: 1,
+	ease: "power3.inOut",
+	snap: 1,
+	scrub: true,
+
+
+});
+
+
+
+// ScrollTrigger.create({
+// 	trigger: "#projects",
+// 	start: "top top",
+// 	duration: 2,
+// 	snap: true,
+// 	pin: true,
+// 	scrub: 1,
+
+
+// });
 
 
 $(document).ready(function(){
 
-				
-	// change bg_clr 
-	$(".pro_ul > li").click(function() {
-		
-		var getIndex = $(this).index();
-		$(".pro_ul > li").eq(getIndex).addClass("flip");
+	// handle links with @href started with '#' only
+	$(document).on('click', 'a[href^="#"]', function(e) {
+	    // target element id
+	    var id = $(this).attr('href');
 
-		
-		if ( getIndex == 0 ) {
-			$(".bg_clr").css({"background-color":"#b7b2ac"});
-		} else if ( getIndex == 1 ) {
-			$(".bg_clr").css({"background-color":"#a0a0a0"});
-			// $(".fnt_clr").css({"color":"#c1c1c1"});
-		} else if ( getIndex == 2 ) {
-			$(".bg_clr").css({"background-color":"#a7a7a7"});
-		} else if ( getIndex == 3 ) {
-			$(".bg_clr").css({"background-color":"#a2a4a6"});
-		} else if ( getIndex == 4 ) {
-			$(".bg_clr").css({"background-color":"#c3c1c5"});
-		} else if ( getIndex == 5 ) {
-			$(".bg_clr").css({"background-color":"#cdd0d0"});
-		} else if ( getIndex == 6 ) {
-			$(".bg_clr").css({"background-color":"#b5b8ba"});
-		} else if ( getIndex == 7 ) {
-			$(".bg_clr").css({"background-color":"#abaeaf"});
-		} else if ( getIndex == 8 ) {
-			$(".bg_clr").css({"background-color":"#c3beb0"});
-		} else {
+	    // target element
+	    var $id = $(id);
+	    if ($id.length === 0) {
+	        return;
+	    }
 
-		}
+	    // prevent standard hash navigation (avoid blinking in IE)
+	    e.preventDefault();
 
+	    // top position relative to the document
+	    var pos = $id.offset().top;
 
-
-
+	    // animated top scrolling
+	    $('body, html').animate({scrollTop: pos});
 	});
 
-	// remove bg_clr and flip 
-	$(".pro_ul > li").mouseleave(function() {
-	
-			$(this).delay(3000).removeClass("flip");
-			$(".bg_clr").css({"background-color":"#d4d0ca"});
-
-			$(".fnt_clr").css({"color":"#000"});
-
-	});
-
-	// nav a click event
-	$("nav a.tab_0").click(function(){
-		
-		$("nav a").eq(0).removeClass("on");
-		$("nav a").eq(1).addClass("on");
-
-		$("body").removeClass("on_1");
-		$("body").removeClass("on");
+	$('nav a:eq(0)').click(function(){
+		$("body").addClass("contact");
 
 		return false;
 	});
 
-	$("nav a.tab_1").click(function(){
-		
-		$("nav a").eq(1).removeClass("on");
-		$("nav a").eq(0).addClass("on");
+	$('.close_btn').click(function(){
+		$("body").removeClass("contact");
 
-		$("body").removeClass("on_2");
-		$("body").removeClass("on_3");
-
-		$("body").addClass("on").delay(100).queue(function(){
-
-			$(this).addClass("on_1").dequeue();
-
-		});
- 
 		return false;
 	});
 
-
-
-
-
-	// email link animation
-	var timer;
-	$(".email_link_li").mouseenter(function(){
-		$(".logo_div").addClass("on");
-		timer = setTimeout(function() {
-			$(".logo_div").addClass("on_1");
-			// alert("hey");
-		}, 200);
-
+	$("#contact .about_ul a").click(function(){
+		$(this).parent().parent().addClass("on");
+		$(this).parent().parent().siblings().removeClass("on");
+		return false;
 	});
 
-	$(".email_link_li").mouseleave(function(){
-
-		$(".logo_div").removeClass("on");
-		$(".logo_div").removeClass("on_1");
-
-		timer = setTimeout(function() {
-			$(".logo_div").removeClass("on_1");
-		}, 200);
-
-
-	});
+	// Close menu by pressing the ESC key.
+    $(document).keyup(function (e) {
+      if ($('body').hasClass('contact') && e.keyCode === 27) { // ESC
+        $('body').removeClass('contact');
+      } else if ($('#forfun').hasClass('on') && e.keyCode === 27) { // ESC
+	    $('#forfun').removeClass('on');
+	    $("body").css("overflow","auto");
+	  }
+    });
 
 
-
-	// open extra list popup
-	$(".fl_9 a").click(function(){
+    $("#projects li.li_0 a").click(function(){
 		$("body").css("overflow","hidden");
 		$("#forfun").addClass("on");
 
@@ -120,62 +418,11 @@ $(document).ready(function(){
 		return false;
 	});
 
-
-	$("#forfun a.close").click(function(){
+    $("#forfun a.close").click(function(){
 		$("body").css("overflow","auto");
 		$("#forfun").removeClass("on");
 		return false;
 	});
 
-	// Close extra list by pressing the ESC key.
-	$(document).keyup(function (e) {
-	  if ($('#forfun').hasClass('on') && e.keyCode === 27) { // ESC
-	    $('#forfun').removeClass('on');
-	    $("body").css("overflow","auto");
-	  }
-	});
-
 
 });
-
-
-
-// $(function(){
-// 	loopIt();
-
-// });
-
-// function loopIt() {
-// 	$(".short_ul > li").each(function (i){
-// 		var t = $(this).eq(i);
-// 		var i = $(this).index() * 1;
-// 		setTimeout(function(){
-// 			t.addClass('move');
-// 				setTimeout(function() {
-// 					t.removeClass("move");
-// 					if (i == $(".short_ul > li").length - 1) loopIt();;
-// 				}, 3000);
-// 		}, 3100 * 1);
-// 	});
-// };
-
-// animateLists();
-// function animateLists() {
-// 	var $lists = $(".short_ul > li");
-// 	var li_lengh = $lists.length = 1;
-// 	var last_index;
-
-// 	addListClass(0);
-// }
-
-// function addListClass(index) {
-// 	var $currentList = $lists.eq(index);
-// 	var lastIndex = (index == 0) ? li_lengh - 1 : index - 1;
-// 	$lists.removeClass("move");
-// 	$currentList.addListClass("move");
-
-// 	setTimeout(function (){
-// 		index = (index + 1) % li_lengh;
-// 		addListClass(index);
-// 	}, 1000);
-// }
