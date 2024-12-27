@@ -178,9 +178,10 @@ footer a { z-index: 10; position:fixed; text-transform: uppercase; right: 20px; 
 }
 
 @media screen and (max-width: 450px) {
+	#main { height:100% }
 	#projects h2 { font-size: 25px; letter-spacing: 10px}
 	#projects li a { background-size: 900px; background-position: center top }
-	#projects li { height:100%; height:100dvh; padding: 50px 30px !important; }
+	#projects li { height:100%; padding: 50px 30px !important; }
 	
 	#contact .close_btn { top: 15px; right: 15px }
 	#contact { padding:0; max-width:100%; height: 100%; backdrop-filter: blur(10px) }
