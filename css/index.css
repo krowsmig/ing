@@ -6,12 +6,14 @@ p, a {  text-decoration: none; font-size: 13px; color: #313131;  }
 p.ko { font-family: 'Pretendard', sans-serif; font-weight: 500 }
 .en { font-family: 'Jost', sans-serif; font-weight: 600 }
 
+body { overscroll-behavior: contain }
+
 /* loading */
 .container { width:100%; }
 .counter { position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width:100px; height: 60px; text-align: center;clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); z-index:0  }
 .counter p { position:relative; display:block; transform: translateY(60px); font-size: 50px; font-weight: 600 }
 .ld {  position:absolute; top: 0; left: 0; width:100%; height:100%; box-sizing: border-box; padding: 0 50px; clip-path: polygon(0 200%, 200% 200%, 200% 200%, 0 200%); will-change: transform; z-index:1  }
-.overlay {  position:absolute; top:0; left: 50%; margin-left: -20%; width: 40%; border-radius: 1000px; height: 100%; background: #313131; clip-path: polygon(0 200%, 200% 200%, 200% 0, 0 0);  z-index: 2  }
+.overlay {  position:absolute; top:0; width: 100%; left: 0; height: 100%; background: #313131; clip-path: polygon(0 200%, 200% 200%, 200% 0, 0 0);  z-index: 2  }
 .opa, .opa_1, .opa_2 { opacity:0; }
 
 /* header */
@@ -24,11 +26,11 @@ header nav a { margin-left: 25px; display:block; margin-bottom: 15px }
 header > a { width: 100px; text-align: right; }
 
 /* #main */
-#main {width: 100%; height: 100vh; height: 100dvh }
+#main {width: 100%; height: 100vh; height:100dvh; }
 #main h1 { transition: 0.3s; width: 100%; font-size: 130px; text-align: center; line-height:95vh }
 
-.rnd { overflow: hidden; border-radius: 1200px; position: relative; transform: translateY(-190px); width: 40%;margin: 0 auto; border-radius: 1300px; background: #fff; height: 100%; box-sizing: border-box;}
-.li_0 .rnd { transform: translateY(-250px); }
+.rnd { overflow: hidden; border-radius: 1200px; position: relative; transform: translateY(0); width: 40%;margin: 0 auto; border-radius: 1300px; background: #fff; height: 100%; box-sizing: border-box;}
+/*.li_0 .rnd { transform: translateY(-250px); }*/
 .rnd .rel { position:absolute; top: 50%; margin-top: -100px; overflow:hidden; max-width: 1200px; left: 50%; margin-left:-600px }
 .rnd p { opacity:0; width: 50%; float:left; padding: 0 50px; font-size: 20px; line-height: 37px; }
 
@@ -40,7 +42,7 @@ header > a { width: 100px; text-align: right; }
 /*			#projects li a:hover { backgound-; transition: 0.3s }*/
 #projects .li_0 .rnd { background:#E1E0DF }
 #projects .li_1 .rnd { background:#383838 }
-#projects .li_2 .rnd { background:#CBCBCB }
+#projects .li_2 .rnd { background:#dadada }
 #projects .li_3 .rnd { background:#3B3D3F }
 #projects .li_4 .rnd { background:#dad8dc }
 #projects .li_5 .rnd { background:#dce0e0 }
@@ -61,7 +63,7 @@ header > a { width: 100px; text-align: right; }
 
 
 /* #contact */
-#contact { position: fixed; right: 0; top: -250vh; transform: skewY(25deg); width: 100%; max-width: 400px; transition: 0.8s; z-index: 1000; height: auto; box-sizing: border-box; padding: 10px;}
+#contact { position: fixed; right: 0; top: -1000px; transform: skewY(25deg); width: 100%; max-width: 400px; transition: 0.8s; z-index: 1000; height: auto; box-sizing: border-box; padding: 10px;}
 #contact h1 { font-size:0; width: 0; height:0; padding: 0; margin: 0; }
 #contact a.email { transition: 0.3s; width:100%; height: 100px; border-radius: 50px; text-align:center; line-height: 100px; display:block; margin-top: 10px; font-size:16px; background: #313131; color: #fff; margin-bottom:10px }
 #contact a.email:hover { background: #000; }
@@ -112,7 +114,7 @@ body.contact #contact { top: 0; transform: skewY(0); }
 .fun_div img {width: 100%;background-color: #ff6006;margin-bottom: 7px;}
 #forfun .close {z-index: 100000000000;height: 100%;width: 100%;font-size: 0;position: absolute;left: 0;top: 0;}
 .pro_ul li .pro_div:after {content: '';display: block;height: 1px;background: #1c1c1c;position: absolute;top: -37px;transition: .4s;width: 0;left: 0;}
-#forfun .ic {font-size: 0;position: absolute;right: 50px;left: auto;top: 64px;width: 40px;height: 40px;border-radius: 5px;border: 1px solid rgba(255, 255, 255, 0.05);padding-top: 0;background-size:cover;background-image:url('../images/main/ic_fi.webp')}
+#forfun .ic {font-size: 0;position: absolute;right: 50px;left: auto;top: 64px;width: 40px;height: 40px;border-radius: 10px;border: 1px solid rgba(255, 255, 255, 0.05);padding-top: 0;background-size: cover;background-image: url("../images/main/ic_fi.webp")}
 
 /* footer */
 footer p { z-index: 10; position:fixed; font-weight: 600; left: 20px; bottom: 20px; }
@@ -142,6 +144,16 @@ footer a { z-index: 10; position:fixed; text-transform: uppercase; right: 20px; 
         right: 30px;
         top: 46px;
     }
+
+    .li_0 .rnd, .rnd,  #projects li a { transform: translateY(0) !important; width:100% !important }
+    #projects h2 { line-height:90vh }
+    #main h1 { line-height: 100vh }
+/*    .overlay { width: 60%; margin-left: -30% }*/
+    #projects li { padding: 50px 50px }
+    #projects li a {  }
+
+
+
 }
 
 @media screen and (max-width: 800px) {
@@ -168,16 +180,17 @@ footer a { z-index: 10; position:fixed; text-transform: uppercase; right: 20px; 
 @media screen and (max-width: 450px) {
 	#projects h2 { font-size: 25px; letter-spacing: 10px}
 	#projects li a { background-size: 900px; background-position: center top }
-	#projects li { padding: 100px 30px; }		
+	#projects li { padding: 50px 30px !important; }
 	
-	#contact { max-width:100%; height:100vh; backdrop-filter: blur(10px) }
-	#contact .about_ul > li { padding: 40px 30px 100px; }		
+	#contact .close_btn { top: 15px; right: 15px }
+	#contact { padding:0; max-width:100%; height: 100%; backdrop-filter: blur(10px) }
+	#contact .about_ul > li { padding: 60px 30px 100px; }		
 	.cont_div { width: 100%; height: 100%; padding-bottom: 110px; box-sizing: border-box; }
-	#contact .about_ul { height:100%; } 
+	#contact .about_ul { height:100%; border-radius: 0 0px 50px 50px; } 
 	.about_ul li.li_0 .rel, .about_ul li.li_1 .rel { position: absolute; top: 50%; width: 100%; box-sizing: border-box; margin-top: -40px; left: 0; }
 	.about_ul li.li_0 h3, .about_ul li.li_1 h3 { position: absolute; left: 0; top: 50%; width: 100%; margin-top: -150px; }
 	.about_ul li.li_0 .line, .about_ul li.li_1 .line { position: absolute; left: 50%; top: 50%; margin-top: -84px; margin-left: -10px;}
-
+	#contact a.email { position: fixed; left:0; bottom:0; margin-bottom:0; }
 	body.contact { overflow:hidden !important }
 }
 @media screen and (max-height: 800px) {
