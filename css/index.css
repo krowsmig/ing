@@ -180,7 +180,7 @@ footer a { z-index: 10; position:fixed; text-transform: uppercase; right: 20px; 
 @media screen and (max-width: 450px) {
 	#main { height:100% }
 	#projects h2 { font-size: 25px; letter-spacing: 10px}
-	#projects li a { background-size: 900px; background-position: center 40px }
+	#projects li a { background-size: 900px; background-position: center 60px }
 	#projects li { height:100%; padding: 50px 30px !important; }
 	
 	#contact .close_btn { top: 15px; right: 15px }
