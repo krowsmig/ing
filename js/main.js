@@ -112,233 +112,173 @@ document.addEventListener("DOMContentLoaded", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
+
+
 var tl = gsap.timeline();
-	tl.to("#projects .li_0 .rnd", { translateY: 0, width: "100%", duration: 2});
-	tl.to("body", {backgroundColor: "#CFCDCB", duration: 2, delay: 0});
-	tl.to("#main h1", { y:-100, opacity: 0, duration: 3, delay: 0, skewY: "20deg"}, '-=3');
-	tl.to("#projects .li_0 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-	// tl.to("#about .rnd p", { opacity: 1, duration: 2}, "-=2");
-	tl.to("#projects .li_1 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
+			tl.to("#main h1", { y:-100, opacity: 0, duration: 3, skewY: "20deg"});
+			tl.to("body", {backgroundColor: "#CFCDCB", duration: 2, delay: 1});
+			tl.to("#projects .li_0 .rnd", { width: "100%", duration: 2,  delay: 0});
+			tl.to("#projects .li_0 .rnd a", { opacity: 1, duration: 2,  delay: 0});
+
+
+		ScrollTrigger.create({
+			trigger: "#main",
+			animation: tl,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+
+		});
+		
+		var tl_1 = gsap.timeline();
+			tl_1.to("body", {backgroundColor: "#787878", duration: 2, delay: 1});
+			tl_1.to("#projects .li_1 .rnd", { width: "100%", duration: 2, delay: 0});
+			tl_1.to("#projects .li_1 .rnd a", { opacity: 1, duration: 2, delay: 0});
+
+		ScrollTrigger.create({
+			trigger: "#projects .li_0",
+			animation: tl_1,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+
+		});
+
+
+		var tl_2 = gsap.timeline();
+			tl_2.to("body", {backgroundColor: "#B8B8B8", duration: 2, delay: 1});
+			tl_2.to("#projects .li_2 .rnd", { width: "100%", duration: 2, delay: 0});
+			tl_2.to("#projects .li_2 .rnd a", { opacity: 1, duration: 2, delay: 0});
+			
+		ScrollTrigger.create({
+			trigger: "#projects .li_1",
+			animation: tl_2,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+		});
+
+
+		var tl_3 = gsap.timeline();
+			tl_3.to("body", {backgroundColor: "#66696D", duration: 2, delay: 1});
+			tl_3.to("#projects .li_3 .rnd", { width: "100%", duration: 2, delay: 0});
+			tl_3.to("#projects .li_3 .rnd a", { opacity: 1, duration: 2, delay: 0});
+
+
+		ScrollTrigger.create({
+			trigger: "#projects .li_2",
+			animation: tl_3,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+
+		});
+
+
+		var tl_4 = gsap.timeline();
+			tl_4.to("body", {backgroundColor: "#c3c1c5", duration: 1, delay: 1});
+			tl_4.to("#projects .li_4 .rnd", { width: "100%", duration: 2, delay: 0});
+			tl_4.to("#projects .li_4 .rnd a", { opacity: 1, duration: 2});
+
+
+
+		ScrollTrigger.create({
+			trigger: "#projects .li_3",
+			animation: tl_4,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+
+		});
+
+		var tl_5 = gsap.timeline();
+			tl_5.to("body", {backgroundColor: "#cdd0d0", duration: 2, delay: 1});
+			tl_5.to("#projects .li_5 .rnd", { width: "100%", duration: 2, delay: 0});
+			tl_5.to("#projects .li_5 .rnd a", { opacity: 1, duration: 2, delay: 0});
+
+
+		ScrollTrigger.create({
+			trigger: "#projects .li_4",
+			animation: tl_5,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+
+		});
+
+
+		var tl_6 = gsap.timeline();
+			tl_6.to("body", {backgroundColor: "#b5b8ba", duration: 2, delay: 1});
+			tl_6.to("#projects .li_6 .rnd", { width: "100%", duration: 2, delay: 0});
+			tl_6.to("#projects .li_6 .rnd a", { opacity: 1, duration: 2, delay: 0});
+
+
+		ScrollTrigger.create({
+			trigger: "#projects .li_5",
+			animation: tl_6,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+
+		});
+
+		var tl_7 = gsap.timeline();
+			tl_7.to("body", {backgroundColor: "#abaeaf", duration: 2, delay: 1});
+			tl_7.to("#projects .li_7 .rnd", { width: "100%", duration: 2, delay: 0});
+			tl_7.to("#projects .li_7 .rnd a", { opacity: 1, duration: 2, delay: 0});
+
+
+		ScrollTrigger.create({
+			trigger: "#projects .li_6",
+			animation: tl_7,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+
+		});
+
+		var tl_8 = gsap.timeline();
+			tl_8.to("body", {backgroundColor: "#c3beb0", duration: 2, delay: 1});
+			tl_8.to("#projects .li_8 .rnd", { width: "100%", duration: 2, delay: 0});
+			tl_8.to("#projects .li_8 .rnd a", { opacity: 1, duration: 2, delay: 0});
+
+
+		ScrollTrigger.create({
+			trigger: "#projects .li_7",
+			animation: tl_8,
+			start: "top top",
+			ease: "power3.inOut",
+			// duration: 2,
+			snap: true,
+			scrub: true,
+			overwrite: true,
+
+		});
 
-ScrollTrigger.create({
-	trigger: "#main",
-	animation: tl,
-	start: "top top",
-	// duration: 3,
-	ease: "power0.inOut",
-	snap: 1,
-	scrub: true,
-	stagger: .3,
-
-
-});
-
-
-var tl_1 = gsap.timeline();
-
-	tl_1.to("#projects .li_1 .rnd", { translateY: 0, width: "100%", duration: 3});
-	tl_1.to("body", {backgroundColor: "#787878", duration: 2, delay: 0});
-	tl_1.to("#projects .li_1 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-	// tl_1.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
-	tl_1.to("#projects .li_0 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_1.to("#projects .li_2 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_1.to("#projects .li_0 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
-
-
-
-ScrollTrigger.create({
-	trigger: "#projects .li_0",
-	animation: tl_1,
-	start: "top top",
-	duration: 1,
-	ease: "power0.inOut",
-	snap: 1,
-	scrub: true,
-	stagger: .3,
-
-
-});
-
-
-var tl_2 = gsap.timeline();
-
-	tl_2.to("#projects .li_2 .rnd", { translateY: 0, width: "100%", duration: 2});
-	tl_2.to("body", {backgroundColor: "#B8B8B8", duration: 2, delay: 0});
-	tl_2.to("#projects .li_2 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-
-	// tl_2.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
-	tl_2.to("#projects .li_1 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_2.to("#projects .li_3 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_2.to("#projects .li_1 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
-
-
-
-ScrollTrigger.create({
-	trigger: "#projects .li_1",
-	animation: tl_2,
-	start: "top top",
-	duration: 1,
-	ease: "power3.inOut",
-	snap: 1,
-	scrub: true,
-	stagger: .3,
-
-});
-
-
-var tl_3 = gsap.timeline();
-
-	tl_3.to("#projects .li_3 .rnd", { translateY: 0, width: "100%", duration: 2, delay: 2});
-	tl_3.to("body", {backgroundColor: "#66696D", duration: 2, delay: 0});
-	tl_3.to("#projects .li_3 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-
-	// tl_3.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
-	tl_3.to("#projects .li_2 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_3.to("#projects .li_4 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_3.to("#projects .li_2 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
-
-
-
-ScrollTrigger.create({
-	trigger: "#projects .li_2",
-	animation: tl_3,
-	start: "top top",
-	duration: 1,
-	ease: "power3.inOut",
-	snap: 1,
-	scrub: true,
-	stagger: .3,
-
-
-});
-
-
-var tl_4 = gsap.timeline();
-
-	tl_4.to("#projects .li_4 .rnd", { translateY: 0, width: "100%", duration: 2});
-	tl_4.to("body", {backgroundColor: "#c3c1c5", duration: 2, delay: 0});
-	tl_4.to("#projects .li_4 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-
-	// tl_4.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
-	tl_4.to("#projects .li_3 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_4.to("#projects .li_5 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_4.to("#projects .li_3 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
-
-
-
-ScrollTrigger.create({
-	trigger: "#projects .li_3",
-	animation: tl_4,
-	start: "top top",
-	duration: 1,
-	ease: "power3.inOut",
-	snap: 1,
-	scrub: true,
-	stagger: .3,
-
-
-});
-
-var tl_5 = gsap.timeline();
-
-	tl_5.to("#projects .li_5 .rnd", { translateY: 0, width: "100%", duration: 2});
-	tl_5.to("body", {backgroundColor: "#cdd0d0", duration: 2, delay: 0});
-	tl_5.to("#projects .li_5 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-
-	// tl_5.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
-	tl_5.to("#projects .li_4 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_5.to("#projects .li_6 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_5.to("#projects .li_4 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
-
-
-
-ScrollTrigger.create({
-	trigger: "#projects .li_4",
-	animation: tl_5,
-	start: "top top",
-	duration: 1,
-	ease: "power3.inOut",
-	snap: 1,
-	scrub: true,
-
-
-});
-
-
-var tl_6 = gsap.timeline();
-
-	tl_6.to("#projects .li_6 .rnd", { translateY: 0, width: "100%", duration: 2});
-	tl_6.to("body", {backgroundColor: "#b5b8ba", duration: 2, delay: 0});
-	tl_6.to("#projects .li_6 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-
-	// tl_6.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
-	tl_6.to("#projects .li_5 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_6.to("#projects .li_7 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_6.to("#projects .li_5 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
-
-
-
-ScrollTrigger.create({
-	trigger: "#projects .li_5",
-	animation: tl_6,
-	start: "top top",
-	duration: 1,
-	ease: "power3.inOut",
-	snap: 1,
-	scrub: true,
-
-
-});
-
-var tl_7 = gsap.timeline();
-
-	tl_7.to("#projects .li_7 .rnd", { translateY: 0, width: "100%", duration: 2});
-	tl_7.to("body", {backgroundColor: "#abaeaf", duration: 2, delay: 0});
-	tl_7.to("#projects .li_7 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-
-	// tl_7.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
-	tl_7.to("#projects .li_6 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_7.to("#projects .li_8 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_7.to("#projects .li_6 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
-
-
-
-ScrollTrigger.create({
-	trigger: "#projects .li_6",
-	animation: tl_7,
-	start: "top top",
-	duration: 1,
-	ease: "power3.inOut",
-	snap: 1,
-	scrub: true,
-
-
-});
-
-var tl_8 = gsap.timeline();
-
-	tl_8.to("#projects .li_8 .rnd", { translateY: 0, width: "100%", duration: 2});
-	tl_8.to("body", {backgroundColor: "#c3beb0", duration: 2, delay: 0});
-	tl_8.to("#projects .li_8 .rnd a", { translateY: 0, opacity: 1, width: "100%", duration: 3}, '+=2');
-
-	// tl_8.to("#about .rnd p", { opacity: 0, duration: 1, delay: 0});
-	tl_8.to("#projects .li_7 .rnd", { translateY: "190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	// tl_8.to("#projects .li_9 .rnd", { translateY: "-190px", width: "40%", duration: 2, delay: 0}, '-=2');
-	tl_8.to("#projects .li_7 .rnd a", { opacity: 0, width: "100%", duration: 2, delay: 0}, '-=2');
-
-
-
-ScrollTrigger.create({
-	trigger: "#projects .li_7",
-	animation: tl_8,
-	start: "top top",
-	duration: 1,
-	ease: "power3.inOut",
-	snap: 1,
-	scrub: true,
-
-
-});
 
 
 
@@ -355,6 +295,8 @@ ScrollTrigger.create({
 
 
 $(document).ready(function(){
+
+
 
 	// handle links with @href started with '#' only
 	$(document).on('click', 'a[href^="#"]', function(e) {
