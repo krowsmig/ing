@@ -146,8 +146,8 @@ footer a { z-index: 10; position:fixed; text-transform: uppercase; right: 20px; 
     }
 
     .li_0 .rnd, .rnd,  #projects li a { transform: translateY(0) !important; width:100% !important }
-    #projects h2 { line-height:90vh }
-    #main h1 { line-height: 100vh }
+    #projects h2 { line-height:90dvh }
+    #main h1 { line-height: 100dvh }
 /*    .overlay { width: 60%; margin-left: -30% }*/
     #projects li { padding: 50px 50px; height: 100% }
     #main, #contact .about_ul, .cont_div { height: 100% }
